@@ -8,6 +8,6 @@
 
 #ifndef advappfinal_APPGeneralHeader_h
 #define advappfinal_APPGeneralHeader_h
-#define WEBSERVER http://www.lwin.com.tw/
+#define WEBSERVER @"http://www.lwin.com.tw/"
 
 #endif

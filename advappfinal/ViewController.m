@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "AFHTTPRequestOperationManager.h"
-#import "APPGeneralHeader.h"
+
+#import "APPGTool.h"
 @interface ViewController ()
 
 @end
@@ -20,10 +21,9 @@
     // Do any additional setup after loading the view, typically from a nib.
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
-    NSString *tmpStr=@"WEBSERVER";
-    NSLog(@"tmpStr=%@",tmpStr);
+    NSString *tmpStr=[NSString stringWithFormat:@"%@ted_temp/pdf_json.php?category=5",[APPGTool getWebServerURL]];
     
-    [manager GET:@"WEBSERVERted_temp/pdf_json.php?category=5" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [manager GET:tmpStr parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);

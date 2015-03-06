@@ -24,6 +24,13 @@
 		812FFE061AA9C9EF0001373A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDFC1AA9C9EF0001373A /* AFURLResponseSerialization.m */; };
 		812FFE071AA9C9EF0001373A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDFE1AA9C9EF0001373A /* AFURLSessionManager.m */; };
 		812FFE0A1AA9CCFE0001373A /* AboutMeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFE091AA9CCFE0001373A /* AboutMeVC.m */; };
+		812FFE101AA9D18A0001373A /* APPGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFE0F1AA9D18A0001373A /* APPGTool.m */; };
+		812FFE181AA9DF230001373A /* 0_home1.json in Resources */ = {isa = PBXBuildFile; fileRef = 812FFE131AA9DF230001373A /* 0_home1.json */; };
+		812FFE191AA9DF230001373A /* 1_about1.json in Resources */ = {isa = PBXBuildFile; fileRef = 812FFE141AA9DF230001373A /* 1_about1.json */; };
+		812FFE1A1AA9DF230001373A /* 2_news1.json in Resources */ = {isa = PBXBuildFile; fileRef = 812FFE151AA9DF230001373A /* 2_news1.json */; };
+		812FFE1B1AA9DF230001373A /* 3_product1.json in Resources */ = {isa = PBXBuildFile; fileRef = 812FFE161AA9DF230001373A /* 3_product1.json */; };
+		812FFE1C1AA9DF230001373A /* 4_order1.json in Resources */ = {isa = PBXBuildFile; fileRef = 812FFE171AA9DF230001373A /* 4_order1.json */; };
+		812FFE241AA9E5F10001373A /* TEDVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFE231AA9E5F10001373A /* TEDVC1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +79,15 @@
 		812FFE081AA9CCFE0001373A /* AboutMeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeVC.h; sourceTree = "<group>"; };
 		812FFE091AA9CCFE0001373A /* AboutMeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeVC.m; sourceTree = "<group>"; };
 		812FFE0B1AA9CD890001373A /* APPGeneralHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPGeneralHeader.h; sourceTree = "<group>"; };
+		812FFE0E1AA9D18A0001373A /* APPGTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPGTool.h; sourceTree = "<group>"; };
+		812FFE0F1AA9D18A0001373A /* APPGTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPGTool.m; sourceTree = "<group>"; };
+		812FFE131AA9DF230001373A /* 0_home1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0_home1.json; sourceTree = "<group>"; };
+		812FFE141AA9DF230001373A /* 1_about1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1_about1.json; sourceTree = "<group>"; };
+		812FFE151AA9DF230001373A /* 2_news1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2_news1.json; sourceTree = "<group>"; };
+		812FFE161AA9DF230001373A /* 3_product1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3_product1.json; sourceTree = "<group>"; };
+		812FFE171AA9DF230001373A /* 4_order1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 4_order1.json; sourceTree = "<group>"; };
+		812FFE221AA9E5F10001373A /* TEDVC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEDVC1.h; sourceTree = "<group>"; };
+		812FFE231AA9E5F10001373A /* TEDVC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDVC1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +129,12 @@
 		812FFDC41AA9C9420001373A /* advappfinal */ = {
 			isa = PBXGroup;
 			children = (
+				812FFE1D1AA9DF8A0001373A /* Home */,
+				812FFE1F1AA9DFA30001373A /* About */,
+				812FFE1E1AA9DF900001373A /* News */,
+				812FFE211AA9DFAF0001373A /* Product */,
+				812FFE201AA9DFAF0001373A /* Order */,
 				812FFE0D1AA9CF320001373A /* localJsons */,
-				812FFDEB1AA9C9EF0001373A /* AFNetworking */,
 				812FFDC91AA9C9420001373A /* AppDelegate.h */,
 				812FFDCA1AA9C9420001373A /* AppDelegate.m */,
 				812FFDCC1AA9C9420001373A /* ViewController.h */,
@@ -126,6 +146,8 @@
 				812FFE081AA9CCFE0001373A /* AboutMeVC.h */,
 				812FFE091AA9CCFE0001373A /* AboutMeVC.m */,
 				812FFE0B1AA9CD890001373A /* APPGeneralHeader.h */,
+				812FFE0E1AA9D18A0001373A /* APPGTool.h */,
+				812FFE0F1AA9D18A0001373A /* APPGTool.m */,
 			);
 			path = advappfinal;
 			sourceTree = "<group>";
@@ -133,6 +155,7 @@
 		812FFDC51AA9C9420001373A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				812FFDEB1AA9C9EF0001373A /* AFNetworking */,
 				812FFDC61AA9C9420001373A /* Info.plist */,
 				812FFDC71AA9C9420001373A /* main.m */,
 			);
@@ -185,8 +208,50 @@
 		812FFE0D1AA9CF320001373A /* localJsons */ = {
 			isa = PBXGroup;
 			children = (
+				812FFE131AA9DF230001373A /* 0_home1.json */,
+				812FFE141AA9DF230001373A /* 1_about1.json */,
+				812FFE151AA9DF230001373A /* 2_news1.json */,
+				812FFE161AA9DF230001373A /* 3_product1.json */,
+				812FFE171AA9DF230001373A /* 4_order1.json */,
 			);
 			path = localJsons;
+			sourceTree = "<group>";
+		};
+		812FFE1D1AA9DF8A0001373A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				812FFE221AA9E5F10001373A /* TEDVC1.h */,
+				812FFE231AA9E5F10001373A /* TEDVC1.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		812FFE1E1AA9DF900001373A /* News */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		812FFE1F1AA9DFA30001373A /* About */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		812FFE201AA9DFAF0001373A /* Order */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		812FFE211AA9DFAF0001373A /* Product */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Product;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,8 +335,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				812FFDD11AA9C9420001373A /* Main.storyboard in Resources */,
+				812FFE1A1AA9DF230001373A /* 2_news1.json in Resources */,
+				812FFE1B1AA9DF230001373A /* 3_product1.json in Resources */,
+				812FFE181AA9DF230001373A /* 0_home1.json in Resources */,
 				812FFDD61AA9C9420001373A /* LaunchScreen.xib in Resources */,
+				812FFE1C1AA9DF230001373A /* 4_order1.json in Resources */,
 				812FFDD31AA9C9420001373A /* Images.xcassets in Resources */,
+				812FFE191AA9DF230001373A /* 1_about1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,10 +359,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812FFE101AA9D18A0001373A /* APPGTool.m in Sources */,
 				812FFDFF1AA9C9EF0001373A /* AFHTTPRequestOperation.m in Sources */,
 				812FFDCE1AA9C9420001373A /* ViewController.m in Sources */,
 				812FFE001AA9C9EF0001373A /* AFHTTPRequestOperationManager.m in Sources */,
 				812FFE021AA9C9EF0001373A /* AFNetworkReachabilityManager.m in Sources */,
+				812FFE241AA9E5F10001373A /* TEDVC1.m in Sources */,
 				812FFE061AA9C9EF0001373A /* AFURLResponseSerialization.m in Sources */,
 				812FFE041AA9C9EF0001373A /* AFURLConnectionOperation.m in Sources */,
 				812FFE031AA9C9EF0001373A /* AFSecurityPolicy.m in Sources */,
@@ -492,6 +564,7 @@
 				812FFDE71AA9C9420001373A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		812FFDE81AA9C9420001373A /* Build configuration list for PBXNativeTarget "advappfinalTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +573,7 @@
 				812FFDEA1AA9C9420001373A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
