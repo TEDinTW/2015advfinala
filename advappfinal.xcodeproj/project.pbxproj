@@ -31,7 +31,6 @@
 		812FFE1B1AA9DF230001373A /* 3_product1.json in Resources */ = {isa = PBXBuildFile; fileRef = 812FFE161AA9DF230001373A /* 3_product1.json */; };
 		812FFE1C1AA9DF230001373A /* 4_order1.json in Resources */ = {isa = PBXBuildFile; fileRef = 812FFE171AA9DF230001373A /* 4_order1.json */; };
 		812FFE241AA9E5F10001373A /* TEDVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFE231AA9E5F10001373A /* TEDVC1.m */; };
-		81C935B91AADDCDA002A13EE /* menu_list.txt in Resources */ = {isa = PBXBuildFile; fileRef = 81C935B81AADDCDA002A13EE /* menu_list.txt */; };
 		9B468A741AADDB69003B38EF /* zu01.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B468A731AADDB69003B38EF /* zu01.m */; };
 /* End PBXBuildFile section */
 
@@ -90,7 +89,6 @@
 		812FFE171AA9DF230001373A /* 4_order1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 4_order1.json; sourceTree = "<group>"; };
 		812FFE221AA9E5F10001373A /* TEDVC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEDVC1.h; sourceTree = "<group>"; };
 		812FFE231AA9E5F10001373A /* TEDVC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDVC1.m; sourceTree = "<group>"; };
-		81C935B81AADDCDA002A13EE /* menu_list.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = menu_list.txt; sourceTree = SOURCE_ROOT; };
 		9B468A721AADDB69003B38EF /* zu01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zu01.h; sourceTree = SOURCE_ROOT; };
 		9B468A731AADDB69003B38EF /* zu01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zu01.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -248,7 +246,6 @@
 		812FFE201AA9DFAF0001373A /* Order */ = {
 			isa = PBXGroup;
 			children = (
-				81C935B81AADDCDA002A13EE /* menu_list.txt */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -345,7 +342,6 @@
 				812FFDD11AA9C9420001373A /* Main.storyboard in Resources */,
 				812FFE1A1AA9DF230001373A /* 2_news1.json in Resources */,
 				812FFE1B1AA9DF230001373A /* 3_product1.json in Resources */,
-				81C935B91AADDCDA002A13EE /* menu_list.txt in Resources */,
 				812FFE181AA9DF230001373A /* 0_home1.json in Resources */,
 				812FFDD61AA9C9420001373A /* LaunchScreen.xib in Resources */,
 				812FFE1C1AA9DF230001373A /* 4_order1.json in Resources */,
