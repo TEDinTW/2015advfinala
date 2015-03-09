@@ -33,6 +33,7 @@
 		812FFE241AA9E5F10001373A /* TEDVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFE231AA9E5F10001373A /* TEDVC1.m */; };
 		81C935B91AADDCDA002A13EE /* menu_list.txt in Resources */ = {isa = PBXBuildFile; fileRef = 81C935B81AADDCDA002A13EE /* menu_list.txt */; };
 		9B468A741AADDB69003B38EF /* zu01.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B468A731AADDB69003B38EF /* zu01.m */; };
+		E602DAAF1AADDD8C00299331 /* LanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E602DAAE1AADDD8C00299331 /* LanVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,8 @@
 		81C935B81AADDCDA002A13EE /* menu_list.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = menu_list.txt; sourceTree = SOURCE_ROOT; };
 		9B468A721AADDB69003B38EF /* zu01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zu01.h; sourceTree = SOURCE_ROOT; };
 		9B468A731AADDB69003B38EF /* zu01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zu01.m; sourceTree = SOURCE_ROOT; };
+		E602DAAD1AADDD8C00299331 /* LanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanVC.h; sourceTree = "<group>"; };
+		E602DAAE1AADDD8C00299331 /* LanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 				812FFE0B1AA9CD890001373A /* APPGeneralHeader.h */,
 				812FFE0E1AA9D18A0001373A /* APPGTool.h */,
 				812FFE0F1AA9D18A0001373A /* APPGTool.m */,
+				E602DAAD1AADDD8C00299331 /* LanVC.h */,
+				E602DAAE1AADDD8C00299331 /* LanVC.m */,
 			);
 			path = advappfinal;
 			sourceTree = "<group>";
@@ -369,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				812FFE101AA9D18A0001373A /* APPGTool.m in Sources */,
+				E602DAAF1AADDD8C00299331 /* LanVC.m in Sources */,
 				9B468A741AADDB69003B38EF /* zu01.m in Sources */,
 				812FFDFF1AA9C9EF0001373A /* AFHTTPRequestOperation.m in Sources */,
 				812FFDCE1AA9C9420001373A /* ViewController.m in Sources */,
