@@ -32,6 +32,7 @@
 		812FFE1C1AA9DF230001373A /* 4_order1.json in Resources */ = {isa = PBXBuildFile; fileRef = 812FFE171AA9DF230001373A /* 4_order1.json */; };
 		812FFE241AA9E5F10001373A /* TEDVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFE231AA9E5F10001373A /* TEDVC1.m */; };
 		9B468A741AADDB69003B38EF /* zu01.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B468A731AADDB69003B38EF /* zu01.m */; };
+		E602DAA91AADDC7400299331 /* lan8177VC.m in Sources */ = {isa = PBXBuildFile; fileRef = E602DAA81AADDC7400299331 /* lan8177VC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,8 @@
 		812FFE231AA9E5F10001373A /* TEDVC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDVC1.m; sourceTree = "<group>"; };
 		9B468A721AADDB69003B38EF /* zu01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zu01.h; sourceTree = SOURCE_ROOT; };
 		9B468A731AADDB69003B38EF /* zu01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zu01.m; sourceTree = SOURCE_ROOT; };
+		E602DAA71AADDC7400299331 /* lan8177VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lan8177VC.h; sourceTree = "<group>"; };
+		E602DAA81AADDC7400299331 /* lan8177VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lan8177VC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,8 @@
 				812FFE0B1AA9CD890001373A /* APPGeneralHeader.h */,
 				812FFE0E1AA9D18A0001373A /* APPGTool.h */,
 				812FFE0F1AA9D18A0001373A /* APPGTool.m */,
+				E602DAA71AADDC7400299331 /* lan8177VC.h */,
+				E602DAA81AADDC7400299331 /* lan8177VC.m */,
 			);
 			path = advappfinal;
 			sourceTree = "<group>";
@@ -365,12 +370,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				812FFE101AA9D18A0001373A /* APPGTool.m in Sources */,
+				E602DAAF1AADDD8C00299331 /* LanVC.m in Sources */,
 				9B468A741AADDB69003B38EF /* zu01.m in Sources */,
 				812FFDFF1AA9C9EF0001373A /* AFHTTPRequestOperation.m in Sources */,
 				812FFDCE1AA9C9420001373A /* ViewController.m in Sources */,
 				812FFE001AA9C9EF0001373A /* AFHTTPRequestOperationManager.m in Sources */,
 				812FFE021AA9C9EF0001373A /* AFNetworkReachabilityManager.m in Sources */,
 				812FFE241AA9E5F10001373A /* TEDVC1.m in Sources */,
+				E602DAA91AADDC7400299331 /* lan8177VC.m in Sources */,
 				812FFE061AA9C9EF0001373A /* AFURLResponseSerialization.m in Sources */,
 				812FFE041AA9C9EF0001373A /* AFURLConnectionOperation.m in Sources */,
 				812FFE031AA9C9EF0001373A /* AFSecurityPolicy.m in Sources */,
