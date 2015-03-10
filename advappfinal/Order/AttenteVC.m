@@ -44,7 +44,6 @@
         return [[[jukunObj.products objectAtIndex:_selectRowInTableView1]objectForKey:@"Menu_List"]count];
     }
     
-
 }
 
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
@@ -68,6 +67,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (tableView.tag==1) {
         _selectRowInTableView1=indexPath.row;
+        _tableView2.frame=CGRectMake(0, 0, 10, 10);
+        _tableView2.alpha=0.3;
+        [UIView animateWithDuration:2.0 animations:^{
+            _tableView2.frame=CGRectMake(137, 28, 121, 300);
+            _tableView2.alpha=1.0;
+        }];
+        
         [_tableView2 reloadData];
     }
 }
