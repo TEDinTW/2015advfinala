@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface JukunProducts : NSObject
-
+@property NSArray *products;
+-(id)initWithJsonPath:(NSString *)jsonFile;
 @end
