@@ -31,6 +31,7 @@
 		812FFE1B1AA9DF230001373A /* 3_product1.json in Resources */ = {isa = PBXBuildFile; fileRef = 812FFE161AA9DF230001373A /* 3_product1.json */; };
 		812FFE1C1AA9DF230001373A /* 4_order1.json in Resources */ = {isa = PBXBuildFile; fileRef = 812FFE171AA9DF230001373A /* 4_order1.json */; };
 		812FFE241AA9E5F10001373A /* TEDVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFE231AA9E5F10001373A /* TEDVC1.m */; };
+		816490241AAF1A1800F8DD6B /* AttenteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 816490231AAF1A1800F8DD6B /* AttenteVC.m */; };
 		81CFB8771AAF1399000A9C7F /* JukunProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CFB8761AAF1399000A9C7F /* JukunProducts.m */; };
 		9B468A741AADDB69003B38EF /* zu01.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B468A731AADDB69003B38EF /* zu01.m */; };
 		E602DAA91AADDC7400299331 /* lan8177VC.m in Sources */ = {isa = PBXBuildFile; fileRef = E602DAA81AADDC7400299331 /* lan8177VC.m */; };
@@ -91,6 +92,8 @@
 		812FFE171AA9DF230001373A /* 4_order1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 4_order1.json; sourceTree = "<group>"; };
 		812FFE221AA9E5F10001373A /* TEDVC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEDVC1.h; sourceTree = "<group>"; };
 		812FFE231AA9E5F10001373A /* TEDVC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDVC1.m; sourceTree = "<group>"; };
+		816490221AAF1A1800F8DD6B /* AttenteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttenteVC.h; sourceTree = "<group>"; };
+		816490231AAF1A1800F8DD6B /* AttenteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttenteVC.m; sourceTree = "<group>"; };
 		81CFB8751AAF1399000A9C7F /* JukunProducts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JukunProducts.h; sourceTree = "<group>"; };
 		81CFB8761AAF1399000A9C7F /* JukunProducts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JukunProducts.m; sourceTree = "<group>"; };
 		9B468A721AADDB69003B38EF /* zu01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zu01.h; sourceTree = SOURCE_ROOT; };
@@ -254,6 +257,8 @@
 		812FFE201AA9DFAF0001373A /* Order */ = {
 			isa = PBXGroup;
 			children = (
+				816490221AAF1A1800F8DD6B /* AttenteVC.h */,
+				816490231AAF1A1800F8DD6B /* AttenteVC.m */,
 				81CFB8751AAF1399000A9C7F /* JukunProducts.h */,
 				81CFB8761AAF1399000A9C7F /* JukunProducts.m */,
 			);
@@ -381,6 +386,7 @@
 				812FFE001AA9C9EF0001373A /* AFHTTPRequestOperationManager.m in Sources */,
 				812FFE021AA9C9EF0001373A /* AFNetworkReachabilityManager.m in Sources */,
 				812FFE241AA9E5F10001373A /* TEDVC1.m in Sources */,
+				816490241AAF1A1800F8DD6B /* AttenteVC.m in Sources */,
 				E602DAA91AADDC7400299331 /* lan8177VC.m in Sources */,
 				812FFE061AA9C9EF0001373A /* AFURLResponseSerialization.m in Sources */,
 				812FFE041AA9C9EF0001373A /* AFURLConnectionOperation.m in Sources */,
