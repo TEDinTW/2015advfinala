@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F11198A1AB0285F00FF1FC6 /* AboutHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1119891AB0285F00FF1FC6 /* AboutHome.m */; };
 		812FFDC81AA9C9420001373A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDC71AA9C9420001373A /* main.m */; };
 		812FFDCB1AA9C9420001373A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDCA1AA9C9420001373A /* AppDelegate.m */; };
 		812FFDCE1AA9C9420001373A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDCD1AA9C9420001373A /* ViewController.m */; };
@@ -48,8 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F1119881AB0285F00FF1FC6 /* AboutHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutHome.h; sourceTree = SOURCE_ROOT; };
-		3F1119891AB0285F00FF1FC6 /* AboutHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutHome.m; sourceTree = SOURCE_ROOT; };
 		812FFDC21AA9C9420001373A /* advappfinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = advappfinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		812FFDC61AA9C9420001373A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		812FFDC71AA9C9420001373A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -120,6 +117,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F11198B1AB0296300FF1FC6 /* About */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
 		812FFDB91AA9C9420001373A = {
 			isa = PBXGroup;
 			children = (
@@ -141,8 +145,8 @@
 		812FFDC41AA9C9420001373A /* advappfinal */ = {
 			isa = PBXGroup;
 			children = (
+				3F11198B1AB0296300FF1FC6 /* About */,
 				812FFE1D1AA9DF8A0001373A /* Home */,
-				812FFE1F1AA9DFA30001373A /* About */,
 				812FFE1E1AA9DF900001373A /* News */,
 				812FFE211AA9DFAF0001373A /* Product */,
 				812FFE201AA9DFAF0001373A /* Order */,
@@ -243,15 +247,6 @@
 			children = (
 			);
 			path = News;
-			sourceTree = "<group>";
-		};
-		812FFE1F1AA9DFA30001373A /* About */ = {
-			isa = PBXGroup;
-			children = (
-				3F1119881AB0285F00FF1FC6 /* AboutHome.h */,
-				3F1119891AB0285F00FF1FC6 /* AboutHome.m */,
-			);
-			path = About;
 			sourceTree = "<group>";
 		};
 		812FFE201AA9DFAF0001373A /* Order */ = {
@@ -381,7 +376,6 @@
 			files = (
 				812FFE101AA9D18A0001373A /* APPGTool.m in Sources */,
 				9B468A741AADDB69003B38EF /* zu01.m in Sources */,
-				3F11198A1AB0285F00FF1FC6 /* AboutHome.m in Sources */,
 				812FFDFF1AA9C9EF0001373A /* AFHTTPRequestOperation.m in Sources */,
 				812FFDCE1AA9C9420001373A /* ViewController.m in Sources */,
 				812FFE001AA9C9EF0001373A /* AFHTTPRequestOperationManager.m in Sources */,
