@@ -8,13 +8,21 @@
 
 #import "AboutHomeVC.h"
 
+
 @interface AboutHomeVC ()
+{
+    NSString *tell;
+}
 @property (strong, nonatomic) IBOutlet UIImageView *imgView;
 @property (strong, nonatomic) IBOutlet UILabel *labelTitle;
-@property (strong, nonatomic) IBOutlet UILabel *labelTel;
+
 @property (strong, nonatomic) IBOutlet UILabel *labelOpentime;
 
 @property (strong, nonatomic) IBOutlet UILabel *labelAddress;
+@property (weak, nonatomic) IBOutlet UIButton *btnTel;
+- (IBAction)btnTel:(UIButton *)sender;
+
+
 
 @end
 
@@ -24,9 +32,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
-    [self loadJSON];
-    
+   [self loadJSON];
 
 }
 
@@ -44,19 +50,18 @@
     for (NSDictionary *p in jsonObj){
         NSString *img = [p objectForKey:@"BGimg"];
         NSString *title = [p objectForKey:@"title"];
-        NSString *tel = [p objectForKey:@"tel"];
+        tell = [p objectForKey:@"tel"];
         NSString *address = [p objectForKey:@"address"];
         NSString *opentime = [p objectForKey:@"opentime"];
         
         self.labelTitle.text = title;
-        self.labelTel.text = tel;
+        
         self.labelOpentime.text = opentime;
         self.labelAddress.text = address;
-        
+        [self.btnTel setTitle:tell forState:UIControlStateNormal];
         self.imgView.image = [UIImage imageNamed:img];
     }
 
-    
 }
 
 /*
@@ -68,5 +73,13 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)btnTel:(UIButton *)sender {
+
+    NSString *tel = [NSString stringWithFormat:@"tel://%@",tell];
+    NSURL *url = [NSURL URLWithString:tel];
+    NSLog(@"%@",url);
+    [[UIApplication sharedApplication]openURL:url];
+}
 
 @end
