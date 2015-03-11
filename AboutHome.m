@@ -1,18 +1,18 @@
 //
-//  LanVC.m
+//  AboutHome.m
 //  advappfinal
 //
-//  Created by ios on 2015/3/9.
+//  Created by Lan on 2015/3/11.
 //  Copyright (c) 2015年 liangjason. All rights reserved.
 //
 
-#import "LanVC.h"
+#import "AboutHome.h"
 
-@interface LanVC ()
+@interface AboutHome ()
 
 @end
 
-@implementation LanVC
+@implementation AboutHome
 
 - (void)viewDidLoad {
     [super viewDidLoad];
