@@ -25,20 +25,8 @@
     // Do any additional setup after loading the view.
     
     
-   NSString *path = [[NSBundle mainBundle]pathForResource:@"1_about1" ofType:@"json"];
+    [self loadJSON];
     
-    NSData *data = [NSData dataWithContentsOfFile:path];
-    
-    NSArray *jsonObj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-    for (NSDictionary *p in jsonObj){
-        NSString *img = [p objectForKey:@"BGimg"];
-        NSString *title = [p objectForKey:@"title"];
-        NSString *tel = [p objectForKey:@"tel"];
-        NSString *address = [p objectForKey:@"address"];
-        NSString *opentime = [p objectForKey:@"opentime"];
-
-        NSLog(@"%@  ,  %@  ,  %@  ,  %@  ,  %@  ",img,title,tel,address,opentime);
-    }
 
 }
 
@@ -54,13 +42,18 @@
     
     NSArray *jsonObj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
     for (NSDictionary *p in jsonObj){
-        self.imgView.image = [p objectForKey:@"BGimg"];
-        self.labelTitle.text = [p objectForKey:@"title"];
-        self.labelTel.text = [p objectForKey:@"tel"];
-        self.labelAddress.text = [p objectForKey:@"address"];
-        self.labelOpentime.text = [p objectForKey:@"opentime"];
+        NSString *img = [p objectForKey:@"BGimg"];
+        NSString *title = [p objectForKey:@"title"];
+        NSString *tel = [p objectForKey:@"tel"];
+        NSString *address = [p objectForKey:@"address"];
+        NSString *opentime = [p objectForKey:@"opentime"];
         
-    
+        self.labelTitle.text = title;
+        self.labelTel.text = tel;
+        self.labelOpentime.text = opentime;
+        self.labelAddress.text = address;
+        
+        self.imgView.image = [UIImage imageNamed:img];
     }
 
     
