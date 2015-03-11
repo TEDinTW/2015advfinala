@@ -25,7 +25,6 @@
     // Do any additional setup after loading the view.
     
     
-    //[self loadJSON];
    NSString *path = [[NSBundle mainBundle]pathForResource:@"1_about1" ofType:@"json"];
     
     NSData *data = [NSData dataWithContentsOfFile:path];
