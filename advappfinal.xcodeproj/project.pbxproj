@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F11198F1AB029BF00FF1FC6 /* AboutHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F11198E1AB029BF00FF1FC6 /* AboutHomeVC.m */; };
 		812FFDC81AA9C9420001373A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDC71AA9C9420001373A /* main.m */; };
 		812FFDCB1AA9C9420001373A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDCA1AA9C9420001373A /* AppDelegate.m */; };
 		812FFDCE1AA9C9420001373A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDCD1AA9C9420001373A /* ViewController.m */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F11198D1AB029BF00FF1FC6 /* AboutHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutHomeVC.h; sourceTree = "<group>"; };
+		3F11198E1AB029BF00FF1FC6 /* AboutHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutHomeVC.m; sourceTree = "<group>"; };
 		812FFDC21AA9C9420001373A /* advappfinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = advappfinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		812FFDC61AA9C9420001373A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		812FFDC71AA9C9420001373A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -117,11 +120,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F11198B1AB0296300FF1FC6 /* About */ = {
+		3F11198C1AB0299F00FF1FC6 /* About */ = {
 			isa = PBXGroup;
 			children = (
+				3F11198D1AB029BF00FF1FC6 /* AboutHomeVC.h */,
+				3F11198E1AB029BF00FF1FC6 /* AboutHomeVC.m */,
 			);
-			name = About;
+			path = About;
 			sourceTree = "<group>";
 		};
 		812FFDB91AA9C9420001373A = {
@@ -145,7 +150,7 @@
 		812FFDC41AA9C9420001373A /* advappfinal */ = {
 			isa = PBXGroup;
 			children = (
-				3F11198B1AB0296300FF1FC6 /* About */,
+				3F11198C1AB0299F00FF1FC6 /* About */,
 				812FFE1D1AA9DF8A0001373A /* Home */,
 				812FFE1E1AA9DF900001373A /* News */,
 				812FFE211AA9DFAF0001373A /* Product */,
@@ -377,6 +382,7 @@
 				812FFE101AA9D18A0001373A /* APPGTool.m in Sources */,
 				9B468A741AADDB69003B38EF /* zu01.m in Sources */,
 				812FFDFF1AA9C9EF0001373A /* AFHTTPRequestOperation.m in Sources */,
+				3F11198F1AB029BF00FF1FC6 /* AboutHomeVC.m in Sources */,
 				812FFDCE1AA9C9420001373A /* ViewController.m in Sources */,
 				812FFE001AA9C9EF0001373A /* AFHTTPRequestOperationManager.m in Sources */,
 				812FFE021AA9C9EF0001373A /* AFNetworkReachabilityManager.m in Sources */,
