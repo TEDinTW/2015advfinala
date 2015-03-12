@@ -1,22 +1,26 @@
 //
-//  zu01.m
+//  TEDConfirmVC.m
 //  advappfinal
 //
-//  Created by zu on 2015/3/9.
+//  Created by cheng Yi Hsin on 2015/3/12.
 //  Copyright (c) 2015年 liangjason. All rights reserved.
 //
 
-#import "zu01.h"
+#import "TEDConfirmVC.h"
 
-@interface zu01 ()
+@interface TEDConfirmVC ()
+{
 
+}
 @end
 
-@implementation zu01
+@implementation TEDConfirmVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
+    
+    NSLog(@"%@",[[self.order objectAtIndex:0]objectForKey:@"mProName"]);
 }
 
 - (void)didReceiveMemoryWarning {
