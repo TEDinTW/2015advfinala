@@ -1,1 +1,36 @@
-fff
+[{
+ "proID": "01",
+ "prdImg": "pic1.jpg",
+ "prName": "白豆花",
+ "prdIntro": "白色的豆花"
+ },{
+ "proID": "02",
+ "prdImg": "pic2.jpg",
+ "prName": "紅豆豆花",
+ "prdIntro": "加紅豆的豆花"
+ },{
+ "proID": "03",
+ "prdImg": "pic3.jpg",
+ "prName": "豆漿豆花",
+ "prdIntro": "加豆漿的白色豆花"
+ },{
+ "proID": "04",
+ "prdImg": "pic4.jpg",
+ "prName": "紅豆豆漿豆花",
+ "prdIntro": "加紅豆的豆漿豆花"
+ },{
+ "proID": "05",
+ "prdImg": "pic5.jpg",
+ "prName": "豆漿",
+ "prdIntro": "就是指豆漿"
+ },{
+ "proID": "06",
+ "prdImg": "pic6.jpg",
+ "prName": "紅豆豆漿",
+ "prdIntro": "加紅豆的豆漿"
+ },{
+ "proID": "07",
+ "prdImg": "pic7.jpg",
+ "prName": "薏仁湯",
+ "prdIntro": "就是薏仁湯"
+ }]
