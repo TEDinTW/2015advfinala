@@ -21,7 +21,6 @@
     // Do any additional setup after loading the view.
     _vc2=[[TEDVC2 alloc]initWithNibName:@"TEDVC2" bundle:nil];
     
-    [self.view addSubview:_vc2.view];
     
 }
 

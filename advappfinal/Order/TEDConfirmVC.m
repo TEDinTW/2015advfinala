@@ -1,28 +1,26 @@
 //
-//  TEDVC1.m
+//  TEDConfirmVC.m
 //  advappfinal
 //
-//  Created by ios on 2015/3/6.
+//  Created by cheng Yi Hsin on 2015/3/12.
 //  Copyright (c) 2015年 liangjason. All rights reserved.
 //
 
-#import "TEDVC1.h"
-#import "TEDVC2.h"
-@interface TEDVC1 ()
+#import "TEDConfirmVC.h"
+
+@interface TEDConfirmVC ()
 {
-    TEDVC2 *_vc2;
+
 }
 @end
 
-@implementation TEDVC1
+@implementation TEDConfirmVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    _vc2=[[TEDVC2 alloc]initWithNibName:@"TEDVC2" bundle:nil];
+    // Do any additional setup after loading the view from its nib.
     
-    [self.view addSubview:_vc2.view];
-    
+    NSLog(@"%@",[[self.order objectAtIndex:0]objectForKey:@"mProName"]);
 }
 
 - (void)didReceiveMemoryWarning {
