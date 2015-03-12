@@ -38,6 +38,8 @@
 		9BBC13031AB1C19D00B42C5D /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC13021AB1C19D00B42C5D /* Product.m */; };
 		9FAA2FEE1AB1B8690017BC16 /* TEDVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA2FEC1AB1B8690017BC16 /* TEDVC2.m */; };
 		9FAA2FEF1AB1B8690017BC16 /* TEDVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FAA2FED1AB1B8690017BC16 /* TEDVC2.xib */; };
+		9FAA2FF31AB1BFE20017BC16 /* TEDConfirmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA2FF11AB1BFE20017BC16 /* TEDConfirmVC.m */; };
+		9FAA2FF41AB1BFE20017BC16 /* TEDConfirmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FAA2FF21AB1BFE20017BC16 /* TEDConfirmVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,9 @@
 		9FAA2FEB1AB1B8690017BC16 /* TEDVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEDVC2.h; sourceTree = "<group>"; };
 		9FAA2FEC1AB1B8690017BC16 /* TEDVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDVC2.m; sourceTree = "<group>"; };
 		9FAA2FED1AB1B8690017BC16 /* TEDVC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TEDVC2.xib; sourceTree = "<group>"; };
+		9FAA2FF01AB1BFE20017BC16 /* TEDConfirmVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEDConfirmVC.h; sourceTree = "<group>"; };
+		9FAA2FF11AB1BFE20017BC16 /* TEDConfirmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDConfirmVC.m; sourceTree = "<group>"; };
+		9FAA2FF21AB1BFE20017BC16 /* TEDConfirmVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TEDConfirmVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +277,9 @@
 				816490231AAF1A1800F8DD6B /* AttenteVC.m */,
 				81CFB8751AAF1399000A9C7F /* JukunProducts.h */,
 				81CFB8761AAF1399000A9C7F /* JukunProducts.m */,
+				9FAA2FF01AB1BFE20017BC16 /* TEDConfirmVC.h */,
+				9FAA2FF11AB1BFE20017BC16 /* TEDConfirmVC.m */,
+				9FAA2FF21AB1BFE20017BC16 /* TEDConfirmVC.xib */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -375,6 +383,7 @@
 				812FFDD61AA9C9420001373A /* LaunchScreen.xib in Resources */,
 				812FFE1C1AA9DF230001373A /* 4_order1.json in Resources */,
 				812FFDD31AA9C9420001373A /* Images.xcassets in Resources */,
+				9FAA2FF41AB1BFE20017BC16 /* TEDConfirmVC.xib in Resources */,
 				812FFE191AA9DF230001373A /* 1_about1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +421,7 @@
 				812FFE0A1AA9CCFE0001373A /* AboutMeVC.m in Sources */,
 				812FFE071AA9C9EF0001373A /* AFURLSessionManager.m in Sources */,
 				812FFDCB1AA9C9420001373A /* AppDelegate.m in Sources */,
+				9FAA2FF31AB1BFE20017BC16 /* TEDConfirmVC.m in Sources */,
 				812FFDC81AA9C9420001373A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
