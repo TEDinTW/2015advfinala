@@ -95,15 +95,14 @@
         }];
         
         [_tableView2 reloadData];
+        
+        
         NSLog(@"you chose %@",[jukunObj.products objectAtIndex:indexPath.row]);
     }else if (tableView.tag==2) {
         _selectRowInTableView2=indexPath.row;
         NSLog(@"you chose %@",[[[[jukunObj.products objectAtIndex:_selectRowInTableView1]objectForKey:@"Menu_List"]objectAtIndex:indexPath.row]objectForKey:@"name"]);
     }
-    
-    
-
-
+   
 }
 
 /*
@@ -127,26 +126,11 @@
     [_order addObject:mDict];
 
     
-//    NSString *filePath=[NSTemporaryDirectory() stringByAppendingString:@"orderData.plist"];
-    
-//    NSMutableArray
-    
-    //NSJSONSerialization
-   // NSDictionary* dict1 =
-//    UITableViewCell *cell;
-//    cell.contentView.
-//    NSDictionary* dict2 = @{@"name":@"a",@"price":@"b"};
-    
-
-    //    NSLog(@"%@",dict2);
-    //_ProductItem.set
-    
-    //NSString *data=[jukunObj.products objectAtIndex:_selectRowInTableView1];
-//    NSLog(@"%@",);
 
 }
 - (IBAction)changedStepper:(UIStepper *)sender {
-    _orderNum.text=[NSString stringWithFormat:@"%f",sender.value];
+    //原本值為float,label 印出後數字後面會有"...",所以要強制轉型成int
+    _orderNum.text=[NSString stringWithFormat:@"%d", (int)sender.value];
     
 }
 
@@ -156,6 +140,7 @@
     vc.order=[NSArray arrayWithArray:_order];
     vc.view.frame=CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     [self presentViewController:vc animated:YES completion:nil];
-
+    
+    
 }
 @end
