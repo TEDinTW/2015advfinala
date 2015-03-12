@@ -124,22 +124,6 @@
     [_order addObject:mDict];
 
     
-//    NSString *filePath=[NSTemporaryDirectory() stringByAppendingString:@"orderData.plist"];
-    
-//    NSMutableArray
-    
-    //NSJSONSerialization
-   // NSDictionary* dict1 =
-//    UITableViewCell *cell;
-//    cell.contentView.
-//    NSDictionary* dict2 = @{@"name":@"a",@"price":@"b"};
-    
-
-    //    NSLog(@"%@",dict2);
-    //_ProductItem.set
-    
-    //NSString *data=[jukunObj.products objectAtIndex:_selectRowInTableView1];
-//    NSLog(@"%@",);
 
 }
 - (IBAction)changedStepper:(UIStepper *)sender {
