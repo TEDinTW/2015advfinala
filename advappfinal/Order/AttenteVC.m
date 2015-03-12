@@ -11,9 +11,16 @@
 @interface AttenteVC ()<UITableViewDataSource,UITableViewDelegate>{
     JukunProducts *jukunObj;
     NSInteger _selectRowInTableView1;
+    NSInteger _selectRowInTableView2;
+    int test;
 }
 @property (strong, nonatomic) IBOutlet UITableView *tableView1;
 @property (strong, nonatomic) IBOutlet UITableView *tableView2;
+
+- (IBAction)saveData:(UIButton *)sender;
+
+
+
 
 @end
 
@@ -60,22 +67,31 @@
         cell.textLabel.text=[[jukunObj.products objectAtIndex:indexPath.row]objectForKey:@"Product_Item"];
     }else{
         cell.textLabel.text=[[[[jukunObj.products objectAtIndex:_selectRowInTableView1]objectForKey:@"Menu_List"]objectAtIndex:indexPath.row]objectForKey:@"name"];
+        //讀取json中的price,用number來接
+        NSNumber *number=[[[[jukunObj.products objectAtIndex:_selectRowInTableView1]objectForKey:@"Menu_List"]objectAtIndex:indexPath.row]objectForKey:@"price"];
+    
+        cell.detailTextLabel.text= [[NSString alloc]initWithFormat:@"%@",number];
+        //字體顏色
+        cell.detailTextLabel.textColor=[UIColor colorWithRed:54.0/255.0 green:161.0/255.0 blue:219.0/255.0 alpha:1];
+
     }
-//    cell.textLabel.text=@"aaa";
+    
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (tableView.tag==1) {
         _selectRowInTableView1=indexPath.row;
-        _tableView2.frame=CGRectMake(0, 0, 10, 10);
+        _tableView2.frame=CGRectMake(137, 28, 10, 10);
         _tableView2.alpha=0.3;
         [UIView animateWithDuration:2.0 animations:^{
-            _tableView2.frame=CGRectMake(137, 28, 121, 300);
+            _tableView2.frame=CGRectMake(137, 28, 211, 300);
             _tableView2.alpha=1.0;
         }];
         
         [_tableView2 reloadData];
     }
+    NSLog(@"%@",[tableView cellForRowAtIndexPath:indexPath].text);
+
 }
 
 /*
@@ -88,4 +104,19 @@
 }
 */
 
+- (IBAction)saveData:(UIButton *)sender {
+    //NSJSONSerialization
+   // NSDictionary* dict1 =
+//    UITableViewCell *cell;
+//    cell.contentView.
+//    NSDictionary* dict2 = @{@"name":@"a",@"price":@"b"};
+    
+
+    //    NSLog(@"%@",dict2);
+    //_ProductItem.set
+    
+    //NSString *data=[jukunObj.products objectAtIndex:_selectRowInTableView1];
+//    NSLog(@"%@",);
+
+}
 @end
