@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NV9-6e-y1r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -27,7 +27,7 @@
         <!--View Controller-->
         <scene sceneID="Kel-z1-jlq">
             <objects>
-                <viewController id="LXS-Ag-b6Z" sceneMemberID="viewController">
+                <viewController id="LXS-Ag-b6Z" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ao3-Dr-NFm"/>
                         <viewControllerLayoutGuide type="bottom" id="FIh-y6-sbf"/>
@@ -37,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9s4-9t-koV">
-                                <rect key="frame" x="5" y="0.0" width="590" height="568"/>
+                                <rect key="frame" x="-175" y="-199" width="590" height="568"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -48,10 +48,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="9s4-9t-koV" secondAttribute="trailing" constant="-16" id="Kj2-bW-w4y"/>
-                            <constraint firstItem="FIh-y6-sbf" firstAttribute="top" secondItem="9s4-9t-koV" secondAttribute="bottom" id="SJt-Lh-JfH"/>
-                            <constraint firstItem="9s4-9t-koV" firstAttribute="leading" secondItem="xWn-0S-ZNH" secondAttribute="leadingMargin" constant="-16" id="aQG-cs-19j"/>
-                            <constraint firstItem="9s4-9t-koV" firstAttribute="top" secondItem="xWn-0S-ZNH" secondAttribute="topMargin" id="z7l-fJ-rLG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9s4-9t-koV" secondAttribute="trailing" constant="-111" id="Kj2-bW-w4y"/>
+                            <constraint firstItem="FIh-y6-sbf" firstAttribute="top" secondItem="9s4-9t-koV" secondAttribute="bottom" constant="106" id="SJt-Lh-JfH"/>
+                            <constraint firstItem="9s4-9t-koV" firstAttribute="leading" secondItem="xWn-0S-ZNH" secondAttribute="leadingMargin" constant="-191" id="aQG-cs-19j"/>
+                            <constraint firstItem="9s4-9t-koV" firstAttribute="top" secondItem="xWn-0S-ZNH" secondAttribute="topMargin" constant="-106" id="z7l-fJ-rLG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hCb-kC-IMW"/>

@@ -10,6 +10,7 @@
 #import "AFHTTPRequestOperationManager.h"
 
 #import "APPGTool.h"
+#import "TEDVC2.h"
 @interface ViewController ()
 
 @end
@@ -19,7 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    TEDVC2 *view = [[TEDVC2 alloc]initWithNibName:@"TEDVC2" bundle:nil];
     
+//    [self.view addSubview:view.view];
+    [self presentViewController:view animated:YES completion:nil];
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     
