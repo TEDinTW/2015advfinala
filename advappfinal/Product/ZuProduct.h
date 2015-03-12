@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Product : UIViewController
+@interface ZuProduct : UIViewController
 
 @end

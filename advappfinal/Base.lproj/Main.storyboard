@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DDH-Nk-zwX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DDH-Nk-zwX">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -227,10 +226,10 @@
             </objects>
             <point key="canvasLocation" x="40.5" y="1075.5"/>
         </scene>
-        <!--Product-->
+        <!--Zu Product-->
         <scene sceneID="8H0-R3-feQ">
             <objects>
-                <viewController id="NV9-6e-y1r" customClass="Product" sceneMemberID="viewController">
+                <viewController id="NV9-6e-y1r" customClass="ZuProduct" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MhN-Pt-pbt"/>
                         <viewControllerLayoutGuide type="bottom" id="3En-tW-Tgj"/>

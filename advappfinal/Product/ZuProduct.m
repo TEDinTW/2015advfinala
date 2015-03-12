@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 liangjason. All rights reserved.
 //
 
-#import "Product.h"
+#import "ZuProduct.h"
 
-@interface Product ()
+@interface ZuProduct ()
 
 @end
 
-@implementation Product
+@implementation ZuProduct
 
 - (void)viewDidLoad {
     [super viewDidLoad];
