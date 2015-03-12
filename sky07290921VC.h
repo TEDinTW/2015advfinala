@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface sky07290921VC : UIViewController
+@interface sky07290921VC : UIViewController<UITableViewDataSource,UITableViewDelegate>
+{
+    NSMutableArray *news;
+}
 
 @end
