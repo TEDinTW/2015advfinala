@@ -1,13 +1,15 @@
 //
-//  Product.h
+//  ViewController.h
 //  advappfinal
 //
-//  Created by zu on 2015/3/12.
+//  Created by ios on 2015/3/6.
 //  Copyright (c) 2015年 liangjason. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface Product : UIViewController
+@interface ViewController : UIViewController
+
 
 @end
+
