@@ -1,5 +1,36 @@
-{
-  "imgURL": "ada2.gif",
-  "msg1": "致力於和平",
-  "msg2": "沒有人能帶給你平靜，只有你自己 ~愛默生\r 只是談論和平並不夠，人們必須相信它；只是相信和平並不夠，人們必須去實踐 ~愛蓮娜．羅斯福"
-}
+ [{
+  "proID": "01",
+  "prdImg": "pic1.jpg",
+  "prName": "白豆花",
+  "prdIntro": "白色的豆花"
+  },{
+  "proID": "02",
+  "prdImg": "pic2.jpg",
+  "prName": "紅豆豆花",
+  "prdIntro": "加紅豆的豆花"
+  },{
+  "proID": "03",
+  "prdImg": "pic3.jpg",
+  "prName": "豆漿豆花",
+  "prdIntro": "加豆漿的白色豆花"
+  },{
+  "proID": "04",
+  "prdImg": "pic4.jpg",
+  "prName": "紅豆豆漿豆花",
+  "prdIntro": "加紅豆的豆漿豆花"
+  },{
+  "proID": "05",
+  "prdImg": "pic5.jpg",
+  "prName": "豆漿",
+  "prdIntro": "就是指豆漿"
+  },{
+  "proID": "06",
+  "prdImg": "pic6.jpg",
+  "prName": "紅豆豆漿",
+  "prdIntro": "加紅豆的豆漿"
+  },{
+  "proID": "07",
+  "prdImg": "pic7.jpg",
+  "prName": "薏仁湯",
+  "prdIntro": "就是薏仁湯"
+  }]
