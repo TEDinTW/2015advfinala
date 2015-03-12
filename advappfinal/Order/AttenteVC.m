@@ -100,7 +100,6 @@
         _selectRowInTableView2=indexPath.row;
         NSLog(@"you chose %@",[[[[jukunObj.products objectAtIndex:_selectRowInTableView1]objectForKey:@"Menu_List"]objectAtIndex:indexPath.row]objectForKey:@"name"]);
     }
-    NSLog(@"%@",[tableView cellForRowAtIndexPath:indexPath].text);
    
 }
 
@@ -153,6 +152,6 @@
     TEDConfirmVC *vc=[[TEDConfirmVC alloc]initWithNibName:@"TEDConfirmVC" bundle:nil];
     vc.order=[NSArray arrayWithArray:_order];
     [self presentViewController:vc animated:YES completion:nil];
-
+    
 }
 @end
