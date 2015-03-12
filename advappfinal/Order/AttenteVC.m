@@ -8,19 +8,25 @@
 
 #import "AttenteVC.h"
 #import "JukunProducts.h"
+#import "TEDConfirmVC.h"
 @interface AttenteVC ()<UITableViewDataSource,UITableViewDelegate>{
     JukunProducts *jukunObj;
     NSInteger _selectRowInTableView1;
     NSInteger _selectRowInTableView2;
     int test;
+    NSMutableArray *_order;
 }
 @property (strong, nonatomic) IBOutlet UITableView *tableView1;
 @property (strong, nonatomic) IBOutlet UITableView *tableView2;
 
 - (IBAction)saveData:(UIButton *)sender;
 
+@property (strong, nonatomic) IBOutlet UIStepper *stepper;
 
+@property (strong, nonatomic) IBOutlet UILabel *orderNum;
 
+- (IBAction)changedStepper:(UIStepper *)sender;
+- (IBAction)pushConfirmBtn:(UIButton *)sender;
 
 @end
 
@@ -34,7 +40,7 @@
     _tableView2.dataSource=self;
     _tableView2.delegate=self;
     jukunObj=[[JukunProducts alloc]initWithJsonPath:@"4_order1"];
-
+    _order=[[NSMutableArray alloc]init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -89,7 +95,12 @@
         }];
         
         [_tableView2 reloadData];
+        NSLog(@"you chose %@",[jukunObj.products objectAtIndex:indexPath.row]);
+    }else if (tableView.tag==2) {
+        _selectRowInTableView2=indexPath.row;
+        NSLog(@"you chose %@",[[[[jukunObj.products objectAtIndex:_selectRowInTableView1]objectForKey:@"Menu_List"]objectAtIndex:indexPath.row]objectForKey:@"name"]);
     }
+   
 }
 
 /*
@@ -103,18 +114,30 @@
 */
 
 - (IBAction)saveData:(UIButton *)sender {
-    //NSJSONSerialization
-   // NSDictionary* dict1 =
-//    UITableViewCell *cell;
-//    cell.contentView.
-//    NSDictionary* dict2 = @{@"name":@"a",@"price":@"b"};
+    NSMutableDictionary *mDict=[[NSMutableDictionary alloc]init];
+    
+    [mDict setObject:[jukunObj.products objectAtIndex:_selectRowInTableView1] forKey:@"mProName"];
+    [mDict setObject:[[[[jukunObj.products objectAtIndex:_selectRowInTableView1]objectForKey:@"Menu_List"]objectAtIndex:_selectRowInTableView2]objectForKey:@"name"] forKey:@"subProName"];
+    [mDict setObject:[[[[jukunObj.products objectAtIndex:_selectRowInTableView1]objectForKey:@"Menu_List"]objectAtIndex:_selectRowInTableView2]objectForKey:@"price"] forKey:@"price"];
+    [mDict setObject:[NSNumber numberWithDouble:_stepper.value] forKey:@"num"];
+    
+    [_order addObject:mDict];
+
     
 
-    //    NSLog(@"%@",dict2);
-    //_ProductItem.set
+}
+- (IBAction)changedStepper:(UIStepper *)sender {
+    _orderNum.text=[NSString stringWithFormat:@"%f",sender.value];
     
-    //NSString *data=[jukunObj.products objectAtIndex:_selectRowInTableView1];
-//    NSLog(@"%@",);
+}
 
+- (IBAction)pushConfirmBtn:(UIButton *)sender {
+//    _order
+    TEDConfirmVC *vc=[[TEDConfirmVC alloc]initWithNibName:@"TEDConfirmVC" bundle:nil];
+    vc.order=[NSArray arrayWithArray:_order];
+    vc.view.frame=CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    [self presentViewController:vc animated:YES completion:nil];
+    
+    
 }
 @end
