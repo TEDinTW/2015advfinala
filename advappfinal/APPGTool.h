@@ -11,4 +11,6 @@
 @interface APPGTool : NSObject
 +(NSString *)getWebServerURL;
 +(NSString *)getJSONWithFileName:(NSString *)fileName andWithType:(int)type;
+
++(NSString *)getTEDFilePathWithFileName:(NSString *)fileName;
 @end

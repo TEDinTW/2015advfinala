@@ -23,6 +23,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [APPGTool getJSONWithFileName:@"0_home1" andWithType:2];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
