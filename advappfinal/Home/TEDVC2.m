@@ -1,27 +1,22 @@
 //
-//  TEDVC1.m
+//  TEDVC2.m
 //  advappfinal
 //
-//  Created by ios on 2015/3/6.
+//  Created by cheng Yi Hsin on 2015/3/12.
 //  Copyright (c) 2015年 liangjason. All rights reserved.
 //
 
-#import "TEDVC1.h"
 #import "TEDVC2.h"
-@interface TEDVC1 ()
-{
-    TEDVC2 *_vc2;
-}
+
+@interface TEDVC2 ()
+
 @end
 
-@implementation TEDVC1
+@implementation TEDVC2
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    _vc2=[[TEDVC2 alloc]initWithNibName:@"TEDVC2" bundle:nil];
-    
-    
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
