@@ -90,6 +90,8 @@
         
         [_tableView2 reloadData];
     }
+    NSLog(@"%@",[tableView cellForRowAtIndexPath:indexPath].text);
+
 }
 
 /*
