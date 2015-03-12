@@ -7,8 +7,11 @@
 //
 
 #import "TEDVC2.h"
+#import "ViewController.h"
 
 @interface TEDVC2 ()
+@property (strong, nonatomic) IBOutlet UIImageView *TEDXIBVIEW;
+- (IBAction)gointo:(UIButton *)sender;
 
 @end
 
@@ -17,8 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    }
+-(void)animate{
+    [UIView animateWithDuration:2.0 animations:^{
+        self.TEDXIBVIEW.alpha=0;
+    } completion:nil];
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -34,4 +42,8 @@
 }
 */
 
+- (IBAction)gointo:(UIButton *)sender {
+    ViewController *vc=[[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 @end
