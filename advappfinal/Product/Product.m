@@ -1,18 +1,18 @@
 //
-//  zu01.m
+//  Product.m
 //  advappfinal
 //
-//  Created by zu on 2015/3/9.
+//  Created by zu on 2015/3/12.
 //  Copyright (c) 2015年 liangjason. All rights reserved.
 //
 
-#import "zu01.h"
+#import "Product.h"
 
-@interface zu01 ()
+@interface Product ()
 
 @end
 
-@implementation zu01
+@implementation Product
 
 - (void)viewDidLoad {
     [super viewDidLoad];
