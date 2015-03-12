@@ -100,10 +100,7 @@
         _selectRowInTableView2=indexPath.row;
         NSLog(@"you chose %@",[[[[jukunObj.products objectAtIndex:_selectRowInTableView1]objectForKey:@"Menu_List"]objectAtIndex:indexPath.row]objectForKey:@"name"]);
     }
-    
-    
-
-
+   
 }
 
 /*
@@ -127,22 +124,6 @@
     [_order addObject:mDict];
 
     
-//    NSString *filePath=[NSTemporaryDirectory() stringByAppendingString:@"orderData.plist"];
-    
-//    NSMutableArray
-    
-    //NSJSONSerialization
-   // NSDictionary* dict1 =
-//    UITableViewCell *cell;
-//    cell.contentView.
-//    NSDictionary* dict2 = @{@"name":@"a",@"price":@"b"};
-    
-
-    //    NSLog(@"%@",dict2);
-    //_ProductItem.set
-    
-    //NSString *data=[jukunObj.products objectAtIndex:_selectRowInTableView1];
-//    NSLog(@"%@",);
 
 }
 - (IBAction)changedStepper:(UIStepper *)sender {
@@ -154,7 +135,9 @@
 //    _order
     TEDConfirmVC *vc=[[TEDConfirmVC alloc]initWithNibName:@"TEDConfirmVC" bundle:nil];
     vc.order=[NSArray arrayWithArray:_order];
+    vc.view.frame=CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     [self presentViewController:vc animated:YES completion:nil];
-
+    
+    
 }
 @end
