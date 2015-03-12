@@ -41,9 +41,7 @@
 		9BBC13031AB1C19D00B42C5D /* ZuProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC13021AB1C19D00B42C5D /* ZuProduct.m */; };
 		9FAA2FEE1AB1B8690017BC16 /* TEDVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA2FEC1AB1B8690017BC16 /* TEDVC2.m */; };
 		9FAA2FEF1AB1B8690017BC16 /* TEDVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FAA2FED1AB1B8690017BC16 /* TEDVC2.xib */; };
-		9FAA2FF31AB1BFE20017BC16 /* TEDConfirmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA2FF11AB1BFE20017BC16 /* TEDConfirmVC.m */; };
-		9FAA2FF41AB1BFE20017BC16 /* TEDConfirmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FAA2FF21AB1BFE20017BC16 /* TEDConfirmVC.xib */; };
-		9FAA2FF71AB1C68A0017BC16 /* TEDNewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA2FF61AB1C68A0017BC16 /* TEDNewsVC.m */; };
+		D29F26FA1AB1BA8D004C8536 /* sky07290921VC.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F26F91AB1BA8D004C8536 /* sky07290921VC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,11 +114,8 @@
 		9FAA2FEB1AB1B8690017BC16 /* TEDVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEDVC2.h; sourceTree = "<group>"; };
 		9FAA2FEC1AB1B8690017BC16 /* TEDVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDVC2.m; sourceTree = "<group>"; };
 		9FAA2FED1AB1B8690017BC16 /* TEDVC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TEDVC2.xib; sourceTree = "<group>"; };
-		9FAA2FF01AB1BFE20017BC16 /* TEDConfirmVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEDConfirmVC.h; sourceTree = "<group>"; };
-		9FAA2FF11AB1BFE20017BC16 /* TEDConfirmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDConfirmVC.m; sourceTree = "<group>"; };
-		9FAA2FF21AB1BFE20017BC16 /* TEDConfirmVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TEDConfirmVC.xib; sourceTree = "<group>"; };
-		9FAA2FF51AB1C68A0017BC16 /* TEDNewsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEDNewsVC.h; sourceTree = "<group>"; };
-		9FAA2FF61AB1C68A0017BC16 /* TEDNewsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDNewsVC.m; sourceTree = "<group>"; };
+		D29F26F81AB1BA8D004C8536 /* sky07290921VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sky07290921VC.h; sourceTree = SOURCE_ROOT; };
+		D29F26F91AB1BA8D004C8536 /* sky07290921VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sky07290921VC.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,8 +273,8 @@
 		812FFE1E1AA9DF900001373A /* News */ = {
 			isa = PBXGroup;
 			children = (
-				9FAA2FF51AB1C68A0017BC16 /* TEDNewsVC.h */,
-				9FAA2FF61AB1C68A0017BC16 /* TEDNewsVC.m */,
+				D29F26F81AB1BA8D004C8536 /* sky07290921VC.h */,
+				D29F26F91AB1BA8D004C8536 /* sky07290921VC.m */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -441,6 +436,7 @@
 				812FFDCB1AA9C9420001373A /* AppDelegate.m in Sources */,
 				9FAA2FF31AB1BFE20017BC16 /* TEDConfirmVC.m in Sources */,
 				812FFDC81AA9C9420001373A /* main.m in Sources */,
+				D29F26FA1AB1BA8D004C8536 /* sky07290921VC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
