@@ -95,6 +95,8 @@
         }];
         
         [_tableView2 reloadData];
+        
+        
         NSLog(@"you chose %@",[jukunObj.products objectAtIndex:indexPath.row]);
     }else if (tableView.tag==2) {
         _selectRowInTableView2=indexPath.row;
@@ -127,7 +129,8 @@
 
 }
 - (IBAction)changedStepper:(UIStepper *)sender {
-    _orderNum.text=[NSString stringWithFormat:@"%f",sender.value];
+    //原本值為float,label 印出後數字後面會有"...",所以要強制轉型成int
+    _orderNum.text=[NSString stringWithFormat:@"%d", (int)sender.value];
     
 }
 
