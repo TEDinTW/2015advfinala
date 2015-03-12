@@ -43,7 +43,11 @@
 */
 
 - (IBAction)gointo:(UIButton *)sender {
-    ViewController *vc=[[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
+    
+    
+    ViewController *vc=[self.storyboard instantiateViewControllerWithIdentifier:@"HomeVC"];
+    
+//    [[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
     [self presentViewController:vc animated:YES completion:nil];
 }
 @end
