@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htr-oY-M8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-281" y="1282"/>
+            <point key="canvasLocation" x="-105" y="1280"/>
         </scene>
         <!--AttenteVC-->
         <scene sceneID="RoT-Pf-MB4">
@@ -168,41 +168,12 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZa-BJ-clQ">
-                                <rect key="frame" x="290" y="406" width="58" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="加入">
+                                <rect key="frame" x="16" y="361" width="46" height="30"/>
+                                <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="saveData:" destination="DDH-Nk-zwX" eventType="touchUpInside" id="jd5-Hn-BRz"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="請於用下方元件加減數量後，確認" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hox-9n-QRO">
-                                <rect key="frame" x="16" y="379" width="100" height="90"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="FKX-SM-meO">
-                                <rect key="frame" x="132" y="409" width="94" height="29"/>
-                                <connections>
-                                    <action selector="changedStepper:" destination="DDH-Nk-zwX" eventType="valueChanged" id="4uJ-oR-5L7"/>
-                                </connections>
-                            </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zd-ga-Odk">
-                                <rect key="frame" x="246" y="413" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0l-Ct-H1M">
-                                <rect key="frame" x="115" y="451" width="145" height="55"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="確認訂購！">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pushConfirmBtn:" destination="DDH-Nk-zwX" eventType="touchUpInside" id="tZe-pE-fm8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -217,33 +188,13 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="orderNum" destination="3Zd-ga-Odk" id="c1N-qu-9wk"/>
-                        <outlet property="stepper" destination="FKX-SM-meO" id="9xS-tk-KPi"/>
                         <outlet property="tableView1" destination="CPx-qf-GiC" id="lzP-N9-kRo"/>
                         <outlet property="tableView2" destination="HcQ-Yl-Kxf" id="9nG-R9-olR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1MU-xT-AL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40.5" y="1075.5"/>
-        </scene>
-        <!--Zu Product-->
-        <scene sceneID="8H0-R3-feQ">
-            <objects>
-                <viewController id="NV9-6e-y1r" customClass="ZuProduct" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MhN-Pt-pbt"/>
-                        <viewControllerLayoutGuide type="bottom" id="3En-tW-Tgj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2cC-Oh-kdM">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jwr-k8-ecv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="400" y="1915"/>
+            <point key="canvasLocation" x="313.5" y="1169.5"/>
         </scene>
         <!--AboutHome-->
         <scene sceneID="Yyk-x0-NaL">
@@ -257,6 +208,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="opentime" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqQ-4e-sCl">
+                                <rect key="frame" x="75" y="579" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWO-fC-clr">
                                 <rect key="frame" x="75" y="626" width="216" height="33"/>
                                 <constraints>
@@ -266,18 +223,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bz2-qm-uiL">
-                                <rect key="frame" x="75" y="534" width="100" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sme-td-BDw">
-                                <rect key="frame" x="149" y="529" width="103" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="103" id="42E-In-NdP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <rect key="frame" x="160" y="529" width="103" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="tel">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -288,8 +236,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zrw-BM-h1x">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="517"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="opentime" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqQ-4e-sCl">
-                                <rect key="frame" x="75" y="577" width="200" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bz2-qm-uiL">
+                                <rect key="frame" x="75" y="534" width="100" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -300,7 +248,7 @@
                             <constraint firstItem="Bz2-qm-uiL" firstAttribute="top" secondItem="zrw-BM-h1x" secondAttribute="bottom" constant="7" id="0yf-YT-a5W"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zrw-BM-h1x" secondAttribute="trailing" constant="-16" id="6Dd-Oa-yH0"/>
                             <constraint firstItem="eqQ-4e-sCl" firstAttribute="leading" secondItem="ncT-TO-9xz" secondAttribute="leadingMargin" constant="65" id="9SM-2Y-NFG"/>
-                            <constraint firstItem="Sme-td-BDw" firstAttribute="top" secondItem="zrw-BM-h1x" secondAttribute="bottom" id="CgZ-6d-xRZ"/>
+                            <constraint firstItem="Sme-td-BDw" firstAttribute="top" secondItem="zrw-BM-h1x" secondAttribute="bottom" id="BZa-LQ-x2d"/>
                             <constraint firstItem="mWO-fC-clr" firstAttribute="leading" secondItem="ncT-TO-9xz" secondAttribute="leadingMargin" constant="65" id="Nio-pn-hJm"/>
                             <constraint firstItem="zrw-BM-h1x" firstAttribute="leading" secondItem="ncT-TO-9xz" secondAttribute="leadingMargin" constant="-16" id="OdR-bv-9OP"/>
                             <constraint firstItem="Bz2-qm-uiL" firstAttribute="leading" secondItem="ncT-TO-9xz" secondAttribute="leadingMargin" constant="65" id="PSr-tc-1If"/>
@@ -321,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0a-em-5YC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903.5" y="1161.5"/>
+            <point key="canvasLocation" x="773.5" y="1114.5"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="Da6-K3-zHy">
