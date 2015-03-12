@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    NSLog(@"%@",[[self.order objectAtIndex:0]objectForKey:@"mProName"]);
+    NSLog(@"%d",[[self.order objectAtIndex:0]objectForKey:@"mProName"]);
 }
 
 - (void)didReceiveMemoryWarning {
