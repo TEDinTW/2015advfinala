@@ -9,7 +9,9 @@
 #import "ZuProduct.h"
 
 @interface ZuProduct ()
+//主餐View
 @property (weak, nonatomic) IBOutlet UIView *mainView;
+//配料View
 @property (weak, nonatomic) IBOutlet UIView *secView;
 
 @end
@@ -37,8 +39,10 @@
 -(void)testViewHidden{
     if (_secView.hidden == YES) {
         _secView.hidden = NO;
+        _mainView.hidden = YES;
     }else{
         _secView.hidden = YES;
+        _mainView.hidden = NO;
     }
     
 }

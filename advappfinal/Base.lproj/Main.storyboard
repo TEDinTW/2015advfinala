@@ -341,78 +341,78 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLU-KD-RAR">
-                                <rect key="frame" x="32" y="630" width="310" height="114"/>
+                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q30-Sy-aAo" userLabel="mainView">
+                                <rect key="frame" x="27" y="596" width="310" height="63"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbC-6V-3Cl">
-                                        <rect key="frame" x="0.0" y="64" width="50" height="50"/>
-                                        <state key="normal" title="Button" image="紅豆.png">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9V-bv-YnS" userLabel="Curd">
+                                        <rect key="frame" x="16" y="5" width="50" height="50"/>
+                                        <state key="normal" title="Button" image="豆花.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZp-Bi-bdV">
-                                        <rect key="frame" x="81" y="64" width="50" height="50"/>
-                                        <state key="normal" title="Button" image="綠豆.png">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9w-q6-Ck6" userLabel="Soya">
+                                        <rect key="frame" x="165" y="8" width="50" height="50"/>
+                                        <state key="normal" title="Button" image="豆漿.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0J-Ij-Ao6">
-                                        <rect key="frame" x="170" y="64" width="50" height="50"/>
-                                        <state key="normal" title="Button" image="大豆.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf1-ME-7qA">
-                                        <rect key="frame" x="252" y="64" width="50" height="50"/>
-                                        <state key="normal" title="Button" image="花生.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7Y-kp-9HW">
-                                        <rect key="frame" x="130" y="8" width="50" height="50"/>
-                                        <state key="normal" title="Button" image="珍珠.jpg">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHT-rf-yGd">
-                                        <rect key="frame" x="42" y="8" width="50" height="50"/>
-                                        <state key="normal" title="Button" image="波霸.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ue7-f6-wWU">
-                                        <rect key="frame" x="215" y="8" width="50" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnn-pH-uPp" userLabel="barleySoup">
+                                        <rect key="frame" x="248" y="8" width="50" height="50"/>
                                         <state key="normal" title="Button" image="薏仁湯.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp8-gx-Q1K" userLabel="SoyaCurd">
+                                        <rect key="frame" x="90" y="8" width="50" height="50"/>
+                                        <state key="normal" title="Button" image="豆漿豆花.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q30-Sy-aAo">
-                                <rect key="frame" x="27" y="596" width="310" height="63"/>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLU-KD-RAR" userLabel="secView">
+                                <rect key="frame" x="37" y="545" width="310" height="114"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9V-bv-YnS">
-                                        <rect key="frame" x="16" y="5" width="50" height="50"/>
-                                        <state key="normal" title="Button" image="豆花.png">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbC-6V-3Cl" userLabel="redBeen">
+                                        <rect key="frame" x="0.0" y="64" width="50" height="50"/>
+                                        <state key="normal" title="Button" image="紅豆.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9w-q6-Ck6">
-                                        <rect key="frame" x="165" y="8" width="50" height="50"/>
-                                        <state key="normal" title="Button" image="豆漿.png">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZp-Bi-bdV" userLabel="greenBeen">
+                                        <rect key="frame" x="81" y="64" width="50" height="50"/>
+                                        <state key="normal" title="Button" image="綠豆.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnn-pH-uPp">
-                                        <rect key="frame" x="248" y="8" width="50" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0J-Ij-Ao6" userLabel="bigBeen">
+                                        <rect key="frame" x="170" y="64" width="50" height="50"/>
+                                        <state key="normal" title="Button" image="大豆.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf1-ME-7qA" userLabel="Peanut">
+                                        <rect key="frame" x="252" y="64" width="50" height="50"/>
+                                        <state key="normal" title="Button" image="花生.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7Y-kp-9HW" userLabel="Pearl">
+                                        <rect key="frame" x="130" y="8" width="50" height="50"/>
+                                        <state key="normal" title="Button" image="珍珠.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHT-rf-yGd" userLabel="Boba">
+                                        <rect key="frame" x="42" y="8" width="50" height="50"/>
+                                        <state key="normal" title="Button" image="波霸.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ue7-f6-wWU" userLabel="Complex">
+                                        <rect key="frame" x="215" y="8" width="50" height="50"/>
                                         <state key="normal" title="Button" image="薏仁湯.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp8-gx-Q1K">
-                                        <rect key="frame" x="90" y="8" width="50" height="50"/>
-                                        <state key="normal" title="Button" image="豆漿豆花.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -555,7 +555,7 @@
     <resources>
         <image name="大豆.png" width="184" height="184"/>
         <image name="波霸.png" width="677" height="677"/>
-        <image name="珍珠.jpg" width="329" height="338"/>
+        <image name="珍珠.png" width="353" height="353"/>
         <image name="紅豆.png" width="490" height="490"/>
         <image name="綠豆.png" width="492" height="492"/>
         <image name="花生.png" width="149" height="149"/>
