@@ -9,6 +9,9 @@
 #import "ZuProduct.h"
 
 @interface ZuProduct ()
+{
+    UIButton *btn;
+}
 @property (weak, nonatomic) IBOutlet UIView *mainView;
 @property (weak, nonatomic) IBOutlet UIView *secView;
 
@@ -19,9 +22,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.mainView.hidden=NO;
     self.secView.hidden=YES;
-   // self.secView.frame=CGPointMake(20, 40);
-    
+    [btn addTarget:self action:@selector(pushBtn:) forControlEvents:UIControlEventTouchUpInside];
+    self.secView.frame=CGRectMake(32, 648, 310, 114);
+    //UIView *secview =[[UIView alloc] initWithFrame: CGRectMake(32, 648, 310, 114)];
+    UIButton *btn=[[UIButton alloc]initWithFrame:CGRectMake(40, 40, 40, 40)];
+    btn.backgroundColor =[UIColor redColor];
+    [btn addTarget:self action:@selector(pushBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+-(void)pushBtn:(UIButton *)sender{
+    NSLog(@"Push");
 }
 
 - (void)didReceiveMemoryWarning {
