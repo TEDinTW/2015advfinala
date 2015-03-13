@@ -9,7 +9,9 @@
 #import "ZuProduct.h"
 
 @interface ZuProduct ()
+//主餐View
 @property (weak, nonatomic) IBOutlet UIView *mainView;
+//配料View
 @property (weak, nonatomic) IBOutlet UIView *secView;
 
 @end
