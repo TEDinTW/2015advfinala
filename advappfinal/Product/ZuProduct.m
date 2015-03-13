@@ -39,8 +39,10 @@
 -(void)testViewHidden{
     if (_secView.hidden == YES) {
         _secView.hidden = NO;
+        _mainView.hidden = YES;
     }else{
         _secView.hidden = YES;
+        _mainView.hidden = NO;
     }
     
 }
