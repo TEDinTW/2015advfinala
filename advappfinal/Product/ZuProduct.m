@@ -9,6 +9,8 @@
 #import "ZuProduct.h"
 
 @interface ZuProduct ()
+@property (weak, nonatomic) IBOutlet UIView *mainView;
+@property (weak, nonatomic) IBOutlet UIView *secView;
 
 @end
 
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.secView.hidden=YES;
+    
 }
 
 - (void)didReceiveMemoryWarning {
