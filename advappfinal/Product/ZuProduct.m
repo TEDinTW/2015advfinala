@@ -20,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.secView.hidden=YES;
+   // self.secView.frame=CGPointMake(20, 40);
     
 }
 
