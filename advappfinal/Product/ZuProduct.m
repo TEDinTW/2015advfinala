@@ -22,11 +22,25 @@
     self.secView.hidden=YES;
    // self.secView.frame=CGPointMake(20, 40);
     
+    //測試用得Btn
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    btn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(testViewHidden) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+//測試用的Btn方法
+-(void)testViewHidden{
+    if (_secView.hidden == YES) {
+        _secView.hidden = NO;
+    }else{
+        _secView.hidden = YES;
+    }
+    
 }
 
 /*
