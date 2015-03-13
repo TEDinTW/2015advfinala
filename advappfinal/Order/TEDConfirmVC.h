@@ -10,4 +10,6 @@
 
 @interface TEDConfirmVC : UIViewController
 @property (strong,nonatomic) NSArray *order;
+@property (strong, nonatomic) IBOutlet UILabel *cell_label_Data;
+
 @end
