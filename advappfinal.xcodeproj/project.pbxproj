@@ -52,10 +52,11 @@
 		9BBC13441AB2E21E00B42C5D /* 珍珠.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13331AB2E21E00B42C5D /* 珍珠.png */; };
 		9BBC13451AB2E21E00B42C5D /* 珍珠豆花.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13341AB2E21E00B42C5D /* 珍珠豆花.png */; };
 		9BBC13461AB2E21E00B42C5D /* 紅豆.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13351AB2E21E00B42C5D /* 紅豆.png */; };
-		9BBC13471AB2E21E00B42C5D /* 紅豆豆花.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13361AB2E21E00B42C5D /* 紅豆豆花.png */; };
 		9BBC13481AB2E21E00B42C5D /* 綠豆.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13371AB2E21E00B42C5D /* 綠豆.png */; };
 		9BBC13491AB2E21E00B42C5D /* 綠豆豆花.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13381AB2E21E00B42C5D /* 綠豆豆花.png */; };
 		9BBC134A1AB2E21E00B42C5D /* 薏仁湯.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13391AB2E21E00B42C5D /* 薏仁湯.png */; };
+		9BBC134C1AB3017A00B42C5D /* 紅豆豆花.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC134B1AB3017A00B42C5D /* 紅豆豆花.png */; };
+		9BBC134F1AB3056A00B42C5D /* zuProductDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC134E1AB3056A00B42C5D /* zuProductDetail.m */; };
 		9FAA2FEE1AB1B8690017BC16 /* TEDVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAA2FEC1AB1B8690017BC16 /* TEDVC2.m */; };
 		9FAA2FEF1AB1B8690017BC16 /* TEDVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FAA2FED1AB1B8690017BC16 /* TEDVC2.xib */; };
 		D29F26FA1AB1BA8D004C8536 /* sky07290921VC.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F26F91AB1BA8D004C8536 /* sky07290921VC.m */; };
@@ -144,10 +145,12 @@
 		9BBC13331AB2E21E00B42C5D /* 珍珠.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "珍珠.png"; sourceTree = "<group>"; };
 		9BBC13341AB2E21E00B42C5D /* 珍珠豆花.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "珍珠豆花.png"; sourceTree = "<group>"; };
 		9BBC13351AB2E21E00B42C5D /* 紅豆.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "紅豆.png"; sourceTree = "<group>"; };
-		9BBC13361AB2E21E00B42C5D /* 紅豆豆花.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "紅豆豆花.png"; sourceTree = "<group>"; };
 		9BBC13371AB2E21E00B42C5D /* 綠豆.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "綠豆.png"; sourceTree = "<group>"; };
 		9BBC13381AB2E21E00B42C5D /* 綠豆豆花.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "綠豆豆花.png"; sourceTree = "<group>"; };
 		9BBC13391AB2E21E00B42C5D /* 薏仁湯.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "薏仁湯.png"; sourceTree = "<group>"; };
+		9BBC134B1AB3017A00B42C5D /* 紅豆豆花.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "紅豆豆花.png"; sourceTree = "<group>"; };
+		9BBC134D1AB3056A00B42C5D /* zuProductDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zuProductDetail.h; sourceTree = "<group>"; };
+		9BBC134E1AB3056A00B42C5D /* zuProductDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zuProductDetail.m; sourceTree = "<group>"; };
 		9FAA2FEB1AB1B8690017BC16 /* TEDVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEDVC2.h; sourceTree = "<group>"; };
 		9FAA2FEC1AB1B8690017BC16 /* TEDVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDVC2.m; sourceTree = "<group>"; };
 		9FAA2FED1AB1B8690017BC16 /* TEDVC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TEDVC2.xib; sourceTree = "<group>"; };
@@ -343,6 +346,8 @@
 				9BBC13041AB2CC0300B42C5D /* Picture */,
 				9BBC13011AB1C19D00B42C5D /* ZuProduct.h */,
 				9BBC13021AB1C19D00B42C5D /* ZuProduct.m */,
+				9BBC134D1AB3056A00B42C5D /* zuProductDetail.h */,
+				9BBC134E1AB3056A00B42C5D /* zuProductDetail.m */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -360,10 +365,10 @@
 				9BBC13301AB2E21E00B42C5D /* 波霸豆花.png */,
 				9BBC13311AB2E21E00B42C5D /* 花生.png */,
 				9BBC13321AB2E21E00B42C5D /* 花生豆花.png */,
+				9BBC134B1AB3017A00B42C5D /* 紅豆豆花.png */,
 				9BBC13331AB2E21E00B42C5D /* 珍珠.png */,
 				9BBC13341AB2E21E00B42C5D /* 珍珠豆花.png */,
 				9BBC13351AB2E21E00B42C5D /* 紅豆.png */,
-				9BBC13361AB2E21E00B42C5D /* 紅豆豆花.png */,
 				9BBC13371AB2E21E00B42C5D /* 綠豆.png */,
 				9BBC13381AB2E21E00B42C5D /* 綠豆豆花.png */,
 				9BBC13391AB2E21E00B42C5D /* 薏仁湯.png */,
@@ -461,6 +466,7 @@
 				9BBC13421AB2E21E00B42C5D /* 花生.png in Resources */,
 				3F1119911AB02C9C00FF1FC6 /* about.jpg in Resources */,
 				9BBC134A1AB2E21E00B42C5D /* 薏仁湯.png in Resources */,
+				9BBC134C1AB3017A00B42C5D /* 紅豆豆花.png in Resources */,
 				9BBC133D1AB2E21E00B42C5D /* 豆漿.png in Resources */,
 				81A252C51AB1BA7500F9E5F2 /* app-icon-01.png in Resources */,
 				9BBC13491AB2E21E00B42C5D /* 綠豆豆花.png in Resources */,
@@ -475,7 +481,6 @@
 				81A252C81AB1BE8B00F9E5F2 /* 水缸豆花02.jpg in Resources */,
 				812FFDD61AA9C9420001373A /* LaunchScreen.xib in Resources */,
 				9BBC133F1AB2E21E00B42C5D /* 波霸.png in Resources */,
-				9BBC13471AB2E21E00B42C5D /* 紅豆豆花.png in Resources */,
 				9BBC13481AB2E21E00B42C5D /* 綠豆.png in Resources */,
 				812FFE1C1AA9DF230001373A /* 4_order1.json in Resources */,
 				812FFDD31AA9C9420001373A /* Images.xcassets in Resources */,
@@ -515,6 +520,7 @@
 				812FFE041AA9C9EF0001373A /* AFURLConnectionOperation.m in Sources */,
 				812FFE031AA9C9EF0001373A /* AFSecurityPolicy.m in Sources */,
 				812FFE011AA9C9EF0001373A /* AFHTTPSessionManager.m in Sources */,
+				9BBC134F1AB3056A00B42C5D /* zuProductDetail.m in Sources */,
 				812FFE051AA9C9EF0001373A /* AFURLRequestSerialization.m in Sources */,
 				81CFB8771AAF1399000A9C7F /* JukunProducts.m in Sources */,
 				812FFE0A1AA9CCFE0001373A /* AboutMeVC.m in Sources */,
