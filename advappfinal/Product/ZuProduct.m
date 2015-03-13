@@ -9,9 +9,6 @@
 #import "ZuProduct.h"
 
 @interface ZuProduct ()
-{
-    UIButton *btn;
-}
 @property (weak, nonatomic) IBOutlet UIView *mainView;
 @property (weak, nonatomic) IBOutlet UIView *secView;
 
@@ -22,19 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.mainView.hidden=NO;
     self.secView.hidden=YES;
-    [btn addTarget:self action:@selector(pushBtn:) forControlEvents:UIControlEventTouchUpInside];
-    self.secView.frame=CGRectMake(32, 648, 310, 114);
-    //UIView *secview =[[UIView alloc] initWithFrame: CGRectMake(32, 648, 310, 114)];
-    UIButton *btn=[[UIButton alloc]initWithFrame:CGRectMake(40, 40, 40, 40)];
-    btn.backgroundColor =[UIColor redColor];
-    [btn addTarget:self action:@selector(pushBtn:) forControlEvents:UIControlEventTouchUpInside];
+   // self.secView.frame=CGPointMake(20, 40);
+    
+    //測試用得Btn
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    btn.backgroundColor = [UIColor redColor];
     [self.view addSubview:btn];
-}
-
--(void)pushBtn:(UIButton *)sender{
-    NSLog(@"Push");
+    [btn addTarget:self action:@selector(testViewHidden) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,8 +37,10 @@
 -(void)testViewHidden{
     if (_secView.hidden == YES) {
         _secView.hidden = NO;
+        _mainView.hidden = YES;
     }else{
         _secView.hidden = YES;
+        _mainView.hidden = NO;
     }
     
 }
