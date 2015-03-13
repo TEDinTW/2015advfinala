@@ -41,6 +41,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+//測試用的Btn方法
+-(void)testViewHidden{
+    if (_secView.hidden == YES) {
+        _secView.hidden = NO;
+    }else{
+        _secView.hidden = YES;
+    }
+    
+}
 
 /*
 #pragma mark - Navigation
