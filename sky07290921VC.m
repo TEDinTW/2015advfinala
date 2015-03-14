@@ -56,9 +56,9 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"DetailVC"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        [[segue destinationViewController] setDetailItem:[json_array
-                                                          objectAtIndex:indexPath.row]];
+//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+//        [[segue destinationViewController] setDetailItem:[json_array
+//                                                          objectAtIndex:indexPath.row]];
     }
 }
 
