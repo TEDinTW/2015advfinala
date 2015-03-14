@@ -12,6 +12,7 @@
 @interface zuProductDetail ()
 {
     NSDictionary *dict;
+//    UILabel *prdNameLabel;
 }
 
 @end
@@ -37,11 +38,27 @@
     UIImageView *prdImg = [[UIImageView alloc]initWithFrame:CGRectMake(36, 156, 303, 303)];
     prdImg.backgroundColor=[UIColor yellowColor];
     
-    [self getJson];
-  //  [self.view addSubview:prdNameLabel];
+    
+    
+    
     [self.view addSubview:prdImg];
     
+    [self getJson];
 
+    NSArray *prds = [dict objectForKey:@"prd"];
+    NSDictionary *dict1 =[prds objectAtIndex:0];
+
+    NSLog(@"%@",dict1);
+    
+    UILabel * prdNameLabel = [[UILabel alloc]initWithFrame:CGRectMake(45, 76, 285, 36)];
+    prdNameLabel.text=[dict1 objectForKey:@"prdID"];
+    prdNameLabel.backgroundColor = [UIColor redColor];
+    [self.view addSubview:prdNameLabel];
+ 
+//    [self getJson];
+    NSLog(@"%@",[dict1 objectForKey:@"prdID"]);
+    
+//    [self getJson];
 }
 
 
