@@ -7,6 +7,7 @@
 //
 
 #import "zuProductDetail.h"
+#import "ZuProduct.h"
 
 @interface zuProductDetail ()
 {
@@ -23,6 +24,8 @@
     
    
     //產品名的文字標籤
+    UILabel *prdNameLabel = [[UILabel alloc]initWithFrame:CGRectMake(45, 76, 285, 36)];//產品名
+    prdNameLabel.text= @"abc";
 //    prdNameLabel.textColor =[UIColor blackColor];
     
 //    [prdNameLabel objectAtIndex:0];
@@ -47,16 +50,11 @@
     NSData *data=[NSData dataWithContentsOfFile:filePath];
     NSError *error;
     dict=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
-    
-    UILabel *prdNameLabel = [[UILabel alloc]initWithFrame:CGRectMake(45, 76, 285, 36)];//產品名
-    prdNameLabel.text= @"abc";
-    
-    prdNameLabel.text=[dict objectForKey:@"prdID"];
-    [self.view addSubview:prdNameLabel];
-
+    NSLog(@"%@",[dict objectForKey:@"prdID"]);
 }
 
-- (void)didReceiveMemoryWarning {
+    
+    - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
