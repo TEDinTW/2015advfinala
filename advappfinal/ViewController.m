@@ -15,20 +15,12 @@
 #import "AttenteVC.h"
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIButton *btn0;
-- (IBAction)orderBtn:(UIButton *)sender;
-- (IBAction)productBtn:(UIButton *)sender;
-- (IBAction)newsBtn:(UIButton *)sender;
-- (IBAction)aboutBtn:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet UIButton *btn1;
 @property (strong, nonatomic) IBOutlet UIButton *btn2;
 @property (strong, nonatomic) IBOutlet UIButton *btn3;
 @property (strong, nonatomic) IBOutlet UIButton *btn4;
 @property (strong, nonatomic) IBOutlet UIButton *btn5;
 @property (strong, nonatomic) IBOutlet UIButton *btn6;
-@property (strong, nonatomic) IBOutlet UIButton *about;
-@property (strong, nonatomic) IBOutlet UIButton *news;
-@property (strong, nonatomic) IBOutlet UIButton *product;
-@property (strong, nonatomic) IBOutlet UIButton *order;
 
 @end
 
@@ -42,10 +34,6 @@
 //    [self.view addSubview:view.view];
     [self presentViewController:view animated:YES completion:nil];
     
-    self.about.alpha=0;
-    self.news.alpha=0;
-    self.product.alpha=0;
-    self.order.alpha=0;
     self.btn0.alpha=0;
     self.btn1.alpha = 0;
     self.btn2.alpha = 0;
@@ -53,11 +41,7 @@
     self.btn4.alpha = 0;
     self.btn5.alpha = 0;
     self.btn6.alpha = 0;
-    [UIButton animateWithDuration:6.0 animations:^{
-        self.about.alpha=1;
-        self.news.alpha=1;
-        self.product.alpha=1;
-        self.order.alpha=1;
+    [UIButton animateWithDuration:3.0 animations:^{
         self.btn1.alpha=1;
         self.btn2.alpha=1;
         self.btn3.alpha=1;
@@ -65,7 +49,7 @@
         self.btn5.alpha=1;
         self.btn6.alpha=1;
         self.btn0.alpha=0.5;
-        _btn1.frame=CGRectMake(196, 211, 70, 70);
+        _btn1.frame=CGRectMake(self.view.frame.size.width*196/414,self.view.frame.size.height*211/736,self.view.frame.size.width*70/414,self.view.frame.size.height*70/736);
         _btn2.frame=CGRectMake(196, 211, 70, 70);
         _btn3.frame=CGRectMake(196, 211, 70, 70);
         _btn4.frame=CGRectMake(196, 211, 70, 70);
@@ -88,19 +72,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)productBtn:(UIButton *)sender {
-    ZuProduct *productview = [[ZuProduct alloc]initWithNibName:@"ZuProduct" bundle:nil];
-    [self presentViewController:productview animated:YES completion:nil];}
-
-
-- (IBAction)newsBtn:(UIButton *)sender {
- DetailVC *newsview = [[DetailVC alloc]initWithNibName:@"DetailVC" bundle:nil];
-    [self presentViewController:newsview animated:YES completion:nil];}
-
-- (IBAction)aboutBtn:(UIButton *)sender {
-}
-- (IBAction)orderBtn:(UIButton *)sender {
-  AttenteVC *orderview = [[AttenteVC alloc]initWithNibName:@"AttenteVC" bundle:nil];
-  [self presentViewController:orderview animated:YES completion:nil];
-}
 @end
