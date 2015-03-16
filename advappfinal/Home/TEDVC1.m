@@ -7,13 +7,10 @@
 //
 
 #import "TEDVC1.h"
-#import "APPGTool.h"
-#import <CoreBluetooth/CoreBluetooth.h>
-
-#define DOWNLOADTYPE 1
+#import "TEDVC2.h"
 @interface TEDVC1 ()
 {
-    CBPeripheralManager *pMgr;
+    TEDVC2 *_vc2;
 }
 @end
 
@@ -22,8 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [APPGTool getJSONWithFileName:@"0_home1" andWithType:2];
+    _vc2=[[TEDVC2 alloc]initWithNibName:@"TEDVC2" bundle:nil];
     
+    [self.view addSubview:_vc2.view];
     
 }
 
