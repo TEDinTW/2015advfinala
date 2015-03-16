@@ -8,10 +8,10 @@
 
 #import "TEDConfirmVC.h"
 
-@interface TEDConfirmVC ()<UITableViewDataSource,UITableViewDelegate>
+@interface TEDConfirmVC ()
 {
 
-  
+ 
 }
 @end
 
@@ -20,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+//    _dataCell.delegate=self;
+//    _dataCell.dataSource=self;
     
     NSLog(@"%@",self.order.count);
     
@@ -32,25 +34,25 @@
 }
 
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [self.order count];
-}
-
-// Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-// Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    UITableViewCell* cell=[tableView dequeueReusableCellWithIdentifier:@"dataCell"];
-    if(!cell){
-        [tableView registerNib:[UINib nibWithNibName:@"" bundle:nil] forCellReuseIdentifier:@"dataCell"];
-        cell=[tableView dequeueReusableCellWithIdentifier:@"dataCell"];
-    }
-    
-   _cell_label_Data.text = [[self.order objectAtIndex:indexPath.row]objectForKey:@"mProName"];
-    
-    return cell;
-}
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+//    return [self.order count];
+//}
+//
+//// Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
+//// Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
+//
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    
+//    UITableViewCell* cell=[tableView dequeueReusableCellWithIdentifier:@"dataCell"];
+//    if(!cell){
+//        [tableView registerNib:[UINib nibWithNibName:@"" bundle:nil] forCellReuseIdentifier:@"dataCell"];
+//        cell=[tableView dequeueReusableCellWithIdentifier:@"dataCell"];
+//    }
+//    
+//   //_dataCell = [[self.order objectAtIndex:indexPath.row]objectForKey:@"mProName"];
+//    
+//    return cell;
+//}
 /*
 #pragma mark - Navigation
 
