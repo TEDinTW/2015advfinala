@@ -22,11 +22,6 @@
     // Do any additional setup after loading the view from its nib.
     
     }
--(void)animate{
-    [UIView animateWithDuration:2.0 animations:^{
-        self.TEDXIBVIEW.alpha=0;
-    } completion:nil];
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -44,5 +39,10 @@
 
 - (IBAction)gointo:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+-(void)animate{
+    [UIView animateWithDuration:2.0 animations:^{
+        self.TEDXIBVIEW.alpha=0;
+    } completion:nil];
 }
 @end
