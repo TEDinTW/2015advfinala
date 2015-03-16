@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NV9-6e-y1r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -408,7 +408,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRI-al-4bJ" userLabel="mainView">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRI-al-4bJ" userLabel="porductView">
                                 <rect key="frame" x="83" y="225" width="218" height="218"/>
                                 <color key="backgroundColor" red="0.77189859169999997" green="0.96677069810000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -421,27 +421,27 @@
                             <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q30-Sy-aAo" userLabel="mainView">
                                 <rect key="frame" x="27" y="596" width="310" height="63"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9V-bv-YnS" userLabel="Curd">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9V-bv-YnS" userLabel="Curd">
                                         <rect key="frame" x="16" y="5" width="50" height="50"/>
                                         <state key="normal" title="Button" image="豆花.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9w-q6-Ck6" userLabel="Soya">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp8-gx-Q1K" userLabel="SoyaCurd">
+                                        <rect key="frame" x="90" y="8" width="50" height="50"/>
+                                        <state key="normal" title="Button" image="豆漿豆花.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9w-q6-Ck6" userLabel="Soya">
                                         <rect key="frame" x="165" y="8" width="50" height="50"/>
                                         <state key="normal" title="Button" image="豆漿.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnn-pH-uPp" userLabel="barleySoup">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnn-pH-uPp" userLabel="barleySoup">
                                         <rect key="frame" x="248" y="8" width="50" height="50"/>
                                         <state key="normal" title="Button" image="薏仁湯.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp8-gx-Q1K" userLabel="SoyaCurd">
-                                        <rect key="frame" x="90" y="8" width="50" height="50"/>
-                                        <state key="normal" title="Button" image="豆漿豆花.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -502,6 +502,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mainView" destination="q30-Sy-aAo" id="73X-FS-C0T"/>
+                        <outlet property="productView" destination="RRI-al-4bJ" id="419-3f-Y9k"/>
                         <outlet property="secView" destination="eLU-KD-RAR" id="kd4-WC-ydV"/>
                         <outletCollection property="secBtnCollection" destination="eHT-rf-yGd" id="j84-UV-5Er"/>
                         <outletCollection property="secBtnCollection" destination="d7Y-kp-9HW" id="qkf-cT-fK0"/>
@@ -510,6 +511,10 @@
                         <outletCollection property="secBtnCollection" destination="pZp-Bi-bdV" id="5at-kC-xeK"/>
                         <outletCollection property="secBtnCollection" destination="a0J-Ij-Ao6" id="Pwc-94-3Ha"/>
                         <outletCollection property="secBtnCollection" destination="Nf1-ME-7qA" id="fHF-rn-YAb"/>
+                        <outletCollection property="mainBtnCollection" destination="c9V-bv-YnS" id="gSv-hf-N83"/>
+                        <outletCollection property="mainBtnCollection" destination="E9w-q6-Ck6" id="VXT-9B-II0"/>
+                        <outletCollection property="mainBtnCollection" destination="gnn-pH-uPp" id="z0A-28-vub"/>
+                        <outletCollection property="mainBtnCollection" destination="Fp8-gx-Q1K" id="zAN-Xl-qXv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jwr-k8-ecv" userLabel="First Responder" sceneMemberID="firstResponder"/>
