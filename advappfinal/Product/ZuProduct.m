@@ -103,7 +103,7 @@
                 NSLog(@"tag = 1");
                 break;
             case 2:
-                [btn1 addTarget:self action:@selector(sendTag:) forControlEvents:UIControlEventTouchUpInside
+                [btn1 addTarget:self action:@selector(sendTag:) forControlEvents:UIControlEventTouchUpInside];
                 NSLog(@"tag = 2");
                 break;
             case 3:
