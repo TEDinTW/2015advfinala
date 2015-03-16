@@ -1,36 +1,36 @@
 {
- "prdID": "1",
- "prdImg": "pic1.jpg",
- "prdName": "白豆花",
- "prdIntro": "白色的豆花"
- },{
- "prdID": "2",
- "prdImg": "pic2.jpg",
- "prdName": "紅豆豆花",
- "prdIntro": "加紅豆的豆花"
- },{
- "prdID": "3",
- "prdImg": "pic3.jpg",
- "prdName": "豆漿豆花",
- "prdIntro": "加豆漿的白色豆花"
- },{
- "prdID": "4",
- "prdImg": "pic4.jpg",
- "prdName": "紅豆豆漿豆花",
- "prdIntro": "加紅豆的豆漿豆花"
- },{
- "prdID": "5",
- "prdImg": "pic5.jpg",
- "prdName": "豆漿",
- "prdIntro": "就只是豆漿"
- },{
- "prdID": "6",
- "prdImg": "pic6.jpg",
- "prdName": "紅豆豆漿",
- "prdIntro": "加紅豆的豆漿"
- },{
- "prdID": "7",
- "prdImg": "pic7.jpg",
- "prdName": "薏仁湯",
- "prdIntro": "就是薏仁湯"
- }
+"prd":
+[
+  {
+  "prdID": "1",
+  "prdImg": "flowerfreshbeanflower.png",
+  "prdName": "花生豆花",
+  "prdIntro": "加花生的豆花"
+  },{
+  "prdID": "2",
+  "prdImg": "pic2.jpg",
+  "prdName": "紅豆豆花",
+  "prdIntro": "加紅豆的豆花"
+  },{
+  "prdID": "3",
+  "prdImg": "pic3.jpg",
+  "prdName": "豆漿豆花",
+  "prdIntro": "加豆漿的白色豆花"
+  },{
+  "prdID": "4",
+  "prdImg": "pic4.jpg",
+  "prdName": "紅豆豆漿豆花",
+  "prdIntro": "加紅豆的豆漿豆花"
+  },{
+  "prdID": "5",
+  "prdImg": "pic5.png",
+  "prdName": "豆漿",
+  "prdIntro": "就只是豆漿"
+  },{
+  "prdID": "6",
+  "prdImg": "豆漿.png",
+  "prdName": "紅豆豆漿",
+  "prdIntro": "加紅豆的豆漿"
+  }
+]
+}
