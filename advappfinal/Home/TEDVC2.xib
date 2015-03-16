@@ -26,7 +26,7 @@
                     </variation>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="水缸豆花02.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xwh-GK-iFy">
-                    <rect key="frame" x="0.0" y="0.0" width="378" height="540"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fr-hT-Vvd">
                     <rect key="frame" x="158" y="518" width="48" height="30"/>
