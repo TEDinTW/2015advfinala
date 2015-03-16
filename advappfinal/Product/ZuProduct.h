@@ -10,6 +10,10 @@
 
 @interface ZuProduct : UIViewController
 {
+    UIButton *btn0;
     UIButton *btn1;
+    
+    int main, sec;
+    NSString *mainViewImage;
 }
 @end
