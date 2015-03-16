@@ -13,25 +13,22 @@
 @end
 
 @implementation DetailVC
+@synthesize detailItem;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSLog(@"%@",detailItem);
+    //設定Navigation Bar的title
+    self.navigationItem.title = self.detailItem[@"title"];
+    //設定欄位的內容
+    self.time.text = self.detailItem[@"update_time"];
+    self.content.text = self.detailItem[@"content"];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

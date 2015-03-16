@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface sky07290921VC : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface sky07290921VC : UITableViewController
+
+//建立一個NSMutableArray型態的news物件
 {
     NSMutableArray *news;
 }
