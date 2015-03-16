@@ -25,8 +25,8 @@
                         <rect key="frame" x="40" y="23" width="321" height="61"/>
                     </variation>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="水缸豆花02.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xwh-GK-iFy">
-                    <rect key="frame" x="0.0" y="0.0" width="378" height="540"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="about.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xwh-GK-iFy">
+                    <rect key="frame" x="0.0" y="0.0" width="456" height="472"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fr-hT-Vvd">
                     <rect key="frame" x="158" y="518" width="48" height="30"/>
@@ -53,6 +53,6 @@
         </view>
     </objects>
     <resources>
-        <image name="水缸豆花02.jpg" width="288" height="206"/>
+        <image name="about.jpg" width="1181" height="844"/>
     </resources>
 </document>

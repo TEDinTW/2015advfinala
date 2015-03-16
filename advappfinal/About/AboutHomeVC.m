@@ -7,11 +7,12 @@
 //
 
 #import "AboutHomeVC.h"
-
+#import "advappfinal-Swift.h"
 
 @interface AboutHomeVC ()
 {
     NSString *tell;
+    MapVC *vc1;
 }
 @property (strong, nonatomic) IBOutlet UIImageView *imgView;
 @property (strong, nonatomic) IBOutlet UILabel *labelTitle;
@@ -21,8 +22,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *labelAddress;
 @property (weak, nonatomic) IBOutlet UIButton *btnTel;
 - (IBAction)btnTel:(UIButton *)sender;
-
-
 
 @end
 
@@ -34,6 +33,8 @@
     
    [self loadJSON];
 
+    vc1=[[MapVC alloc]init];
+    [self.view addSubview:vc1.view];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,6 +81,13 @@
     NSURL *url = [NSURL URLWithString:tel];
     NSLog(@"%@",url);
     [[UIApplication sharedApplication]openURL:url];
+}
+
+-(void)showMap{
+//    MapVC1 *vc1=[[MapVC1 alloc]init];
+    
+//    MySwiftClass *swiftObject = [[MySwiftClass alloc] init];
+//    [swiftObject swiftMethod];
 }
 
 @end
