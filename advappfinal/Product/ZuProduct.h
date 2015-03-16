@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ZuProduct : UIViewController
-
-
-
+{
+    UIButton *btn1;
+}
 @end
