@@ -156,7 +156,7 @@
 		81EF01F31AB7159800EFA1F3 /* 薏仁湯 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "薏仁湯 1.png"; sourceTree = "<group>"; };
 		81EF01F81AB715A500EFA1F3 /* 豆花1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "豆花1.png"; sourceTree = "<group>"; };
 		81FB01901AB6ED5A004FBBAC /* Main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
-		81FB01921AB6EFD9004FBBAC /* advappfinal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "advappfinal-Bridging-Header.h"; sourceTree = "<group>"; };
+		81FB01921AB6EFD9004FBBAC /* advappfinal-MapVC-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "advappfinal-MapVC-Swift.h"; sourceTree = "<group>"; };
 		81FB01931AB6EFD9004FBBAC /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		9BBC13011AB1C19D00B42C5D /* ZuProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZuProduct.h; sourceTree = "<group>"; };
 		9BBC13021AB1C19D00B42C5D /* ZuProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZuProduct.m; sourceTree = "<group>"; };
@@ -215,7 +215,7 @@
 				3F1119901AB02C9C00FF1FC6 /* about.jpg */,
 				3F11198D1AB029BF00FF1FC6 /* AboutHomeVC.h */,
 				3F11198E1AB029BF00FF1FC6 /* AboutHomeVC.m */,
-				81FB01921AB6EFD9004FBBAC /* advappfinal-Bridging-Header.h */,
+				81FB01921AB6EFD9004FBBAC /* advappfinal-MapVC-Swift.h */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -698,11 +698,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = advappfinal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "advappfinal/About/advappfinal-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "advappfinal/About/advappfinal-MapVC-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -713,11 +714,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = advappfinal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "advappfinal/About/advappfinal-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "advappfinal/About/advappfinal-MapVC-Swift.h";
 			};
 			name = Release;
 		};
