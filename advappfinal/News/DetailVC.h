@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailVC : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface DetailVC : UIViewController
+
+//建立一個NSDictionary型態的detailItem物件
+@property (weak, nonatomic) NSDictionary *detailItem;
+@property (weak, nonatomic) IBOutlet UILabel *time;
+@property (weak, nonatomic) IBOutlet UILabel *content;
+
 
 @end

@@ -37,6 +37,10 @@
     
     //mainView 飛入動畫
     [self mainViewHiddenAnimated];
+    
+    
+    //secView按鈕選項
+    [self BtnTag];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -89,6 +93,78 @@
             NSLog(@"finished = false");
         }
     }];
+}
+
+-(void)BtnTag{
+    for (btn1 in _secBtnCollection) {
+        switch (btn1.tag) {
+            case 1:
+                [btn1 addTarget:self action:@selector(sendTag:) forControlEvents:UIControlEventTouchUpInside];
+                NSLog(@"tag = 1");
+                break;
+            case 2:
+                [btn1 addTarget:self action:@selector(sendTag:) forControlEvents:UIControlEventTouchUpInside];
+                NSLog(@"tag = 2");
+                break;
+            case 3:
+                [btn1 addTarget:self action:@selector(sendTag:) forControlEvents:UIControlEventTouchUpInside];
+                NSLog(@"tag = 3");
+                break;
+            case 4:
+                [btn1 addTarget:self action:@selector(sendTag:) forControlEvents:UIControlEventTouchUpInside];
+                NSLog(@"tag = 4");
+                break;
+            case 5:
+                [btn1 addTarget:self action:@selector(sendTag:) forControlEvents:UIControlEventTouchUpInside];
+                NSLog(@"tag = 5");
+                break;
+            case 6:
+                [btn1 addTarget:self action:@selector(sendTag:) forControlEvents:UIControlEventTouchUpInside];
+                NSLog(@"tag = 6");
+                break;
+            case 7:
+                [btn1 addTarget:self action:@selector(sendTag:) forControlEvents:UIControlEventTouchUpInside];
+                NSLog(@"tag = 7");
+                break;
+                
+            default:
+                break;
+        }
+    }
+}
+//按鈕Tag值傳遞
+-(void)sendTag:(UIButton *)sender{
+    switch (sender.tag) {
+        case 1:
+            NSLog(@"tag = 1.1");
+            break;
+        case 2:
+            NSLog(@"tag = 1.2");
+            break;
+        case 3:
+            NSLog(@"tag = 1.3");
+            break;
+        case 4:
+            NSLog(@"tag = 1.4");
+            break;
+        case 5:
+            NSLog(@"tag = 1.5");
+            break;
+        case 6:
+            NSLog(@"tag = 1.6");
+            break;
+            
+        case 7:
+            NSLog(@"tag = 1.7");
+            break;
+            
+        default:
+            break;
+    }
+}
+
+-(void)receiveMainView{
+    
 }
 
 /*

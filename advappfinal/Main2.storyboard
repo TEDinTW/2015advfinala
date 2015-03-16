@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lch-01-2Db">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NV9-6e-y1r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -45,6 +45,66 @@
                                     <segue destination="mUa-Q8-KgD" kind="show" id="q1v-8z-UGd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ct-O0-QqQ">
+                                <rect key="frame" x="137" y="44" width="31" height="30"/>
+                                <state key="normal" title="btn1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4p-jv-lyb">
+                                <rect key="frame" x="50" y="93" width="31" height="30"/>
+                                <state key="normal" title="btn2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lv-WU-Kk8">
+                                <rect key="frame" x="219" y="104" width="31" height="30"/>
+                                <state key="normal" title="btn3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJg-9c-Qvm">
+                                <rect key="frame" x="50" y="195" width="31" height="30"/>
+                                <state key="normal" title="btn4">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn5" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mQ-ce-dGd">
+                                <rect key="frame" x="211" y="195" width="31" height="30"/>
+                                <state key="normal" title="btn5">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn6" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dB9-oN-ige">
+                                <rect key="frame" x="137" y="282" width="31" height="30"/>
+                                <state key="normal" title="btn6">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="about" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVb-TW-WAa">
+                                <rect key="frame" x="23" y="518" width="40" height="30"/>
+                                <state key="normal" title="about">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="product" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccU-qh-SN9">
+                                <rect key="frame" x="158" y="518" width="54" height="30"/>
+                                <state key="normal" title="product">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="order" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdY-bU-Yoq">
+                                <rect key="frame" x="251" y="518" width="37" height="30"/>
+                                <state key="normal" title="order">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="news" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPa-lz-Z5H">
+                                <rect key="frame" x="97" y="518" width="36" height="30"/>
+                                <state key="normal" title="news">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -56,6 +116,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="hCb-kC-IMW"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="about" destination="UVb-TW-WAa" id="66R-qu-R1E"/>
+                        <outlet property="btn1" destination="5ct-O0-QqQ" id="ncL-r5-09h"/>
+                        <outlet property="btn2" destination="W4p-jv-lyb" id="08M-Ci-L2M"/>
+                        <outlet property="btn3" destination="3Lv-WU-Kk8" id="rbu-qf-sLt"/>
+                        <outlet property="btn4" destination="fJg-9c-Qvm" id="jvS-vR-xWt"/>
+                        <outlet property="btn5" destination="4mQ-ce-dGd" id="NqW-Rd-Uz4"/>
+                        <outlet property="btn6" destination="dB9-oN-ige" id="xk7-KY-cu2"/>
+                        <outlet property="news" destination="dPa-lz-Z5H" id="Tja-Yb-diB"/>
+                        <outlet property="order" destination="XdY-bU-Yoq" id="xhw-zj-ttn"/>
+                        <outlet property="product" destination="ccU-qh-SN9" id="tVK-cs-lqZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9f-Lm-ks5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -336,7 +408,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRI-al-4bJ">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRI-al-4bJ" userLabel="mainView">
                                 <rect key="frame" x="83" y="225" width="218" height="218"/>
                                 <color key="backgroundColor" red="0.77189859169999997" green="0.96677069810000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -443,7 +515,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jwr-k8-ecv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="dy7-iT-3w5"/>
             </objects>
-            <point key="canvasLocation" x="368.5" y="1995.5"/>
+            <point key="canvasLocation" x="444.5" y="1903.5"/>
         </scene>
         <!--Zu Product Detail-->
         <scene sceneID="dJh-mi-6c0">
@@ -457,15 +529,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QcZ-4B-EZE">
+                                <rect key="frame" x="36" y="156" width="303" height="303"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTt-hV-nhU">
                                 <rect key="frame" x="45" y="84" width="285" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QcZ-4B-EZE">
-                                <rect key="frame" x="36" y="155" width="303" height="303"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
