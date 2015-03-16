@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F11198F1AB029BF00FF1FC6 /* AboutHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F11198E1AB029BF00FF1FC6 /* AboutHomeVC.m */; };
 		3F1119911AB02C9C00FF1FC6 /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F1119901AB02C9C00FF1FC6 /* about.jpg */; };
+		811405781AB7072F006951AA /* TEDConfirmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 811405771AB7072F006951AA /* TEDConfirmVC.xib */; };
 		812FFDC81AA9C9420001373A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDC71AA9C9420001373A /* main.m */; };
 		812FFDCB1AA9C9420001373A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDCA1AA9C9420001373A /* AppDelegate.m */; };
 		812FFDCE1AA9C9420001373A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDCD1AA9C9420001373A /* ViewController.m */; };
@@ -60,7 +61,7 @@
 		9BBC13401AB2E21E00B42C5D /* 波霸豆花.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC132F1AB2E21E00B42C5D /* 波霸豆花.jpg */; };
 		9BBC13411AB2E21E00B42C5D /* 波霸豆花.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13301AB2E21E00B42C5D /* 波霸豆花.png */; };
 		9BBC13421AB2E21E00B42C5D /* 花生.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13311AB2E21E00B42C5D /* 花生.png */; };
-		9BBC13431AB2E21E00B42C5D /* 花生豆花.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13321AB2E21E00B42C5D /* 花生豆花.png */; };
+		9BBC13431AB2E21E00B42C5D /* flowerfreshbeanflower.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13321AB2E21E00B42C5D /* flowerfreshbeanflower.png */; };
 		9BBC13441AB2E21E00B42C5D /* 珍珠.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13331AB2E21E00B42C5D /* 珍珠.png */; };
 		9BBC13451AB2E21E00B42C5D /* 珍珠豆花.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13341AB2E21E00B42C5D /* 珍珠豆花.png */; };
 		9BBC13461AB2E21E00B42C5D /* 紅豆.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13351AB2E21E00B42C5D /* 紅豆.png */; };
@@ -73,7 +74,6 @@
 		9FAA2FEF1AB1B8690017BC16 /* TEDVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FAA2FED1AB1B8690017BC16 /* TEDVC2.xib */; };
 		D29F26FA1AB1BA8D004C8536 /* sky07290921VC.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F26F91AB1BA8D004C8536 /* sky07290921VC.m */; };
 		D29F27011AB1D879004C8536 /* TEDConfirmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F26FF1AB1D879004C8536 /* TEDConfirmVC.m */; };
-		D29F27021AB1D879004C8536 /* TEDConfirmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29F27001AB1D879004C8536 /* TEDConfirmVC.xib */; };
 		D29F27051AB1DA2B004C8536 /* DetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F27041AB1DA2B004C8536 /* DetailVC.m */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +91,7 @@
 		3F11198D1AB029BF00FF1FC6 /* AboutHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutHomeVC.h; sourceTree = "<group>"; };
 		3F11198E1AB029BF00FF1FC6 /* AboutHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutHomeVC.m; sourceTree = "<group>"; };
 		3F1119901AB02C9C00FF1FC6 /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = about.jpg; sourceTree = "<group>"; };
+		811405771AB7072F006951AA /* TEDConfirmVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TEDConfirmVC.xib; sourceTree = "<group>"; };
 		812FFDC21AA9C9420001373A /* advappfinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = advappfinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		812FFDC61AA9C9420001373A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		812FFDC71AA9C9420001373A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -165,7 +166,7 @@
 		9BBC132F1AB2E21E00B42C5D /* 波霸豆花.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "波霸豆花.jpg"; sourceTree = "<group>"; };
 		9BBC13301AB2E21E00B42C5D /* 波霸豆花.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "波霸豆花.png"; sourceTree = "<group>"; };
 		9BBC13311AB2E21E00B42C5D /* 花生.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "花生.png"; sourceTree = "<group>"; };
-		9BBC13321AB2E21E00B42C5D /* 花生豆花.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "花生豆花.png"; sourceTree = "<group>"; };
+		9BBC13321AB2E21E00B42C5D /* flowerfreshbeanflower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flowerfreshbeanflower.png; sourceTree = "<group>"; };
 		9BBC13331AB2E21E00B42C5D /* 珍珠.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "珍珠.png"; sourceTree = "<group>"; };
 		9BBC13341AB2E21E00B42C5D /* 珍珠豆花.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "珍珠豆花.png"; sourceTree = "<group>"; };
 		9BBC13351AB2E21E00B42C5D /* 紅豆.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "紅豆.png"; sourceTree = "<group>"; };
@@ -182,7 +183,6 @@
 		D29F26F91AB1BA8D004C8536 /* sky07290921VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sky07290921VC.m; sourceTree = SOURCE_ROOT; };
 		D29F26FE1AB1D879004C8536 /* TEDConfirmVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEDConfirmVC.h; sourceTree = "<group>"; };
 		D29F26FF1AB1D879004C8536 /* TEDConfirmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDConfirmVC.m; sourceTree = "<group>"; };
-		D29F27001AB1D879004C8536 /* TEDConfirmVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TEDConfirmVC.xib; sourceTree = "<group>"; };
 		D29F27031AB1DA2B004C8536 /* DetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailVC.h; sourceTree = "<group>"; };
 		D29F27041AB1DA2B004C8536 /* DetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -367,7 +367,7 @@
 			children = (
 				D29F26FE1AB1D879004C8536 /* TEDConfirmVC.h */,
 				D29F26FF1AB1D879004C8536 /* TEDConfirmVC.m */,
-				D29F27001AB1D879004C8536 /* TEDConfirmVC.xib */,
+				811405771AB7072F006951AA /* TEDConfirmVC.xib */,
 				816490221AAF1A1800F8DD6B /* AttenteVC.h */,
 				816490231AAF1A1800F8DD6B /* AttenteVC.m */,
 				81CFB8751AAF1399000A9C7F /* JukunProducts.h */,
@@ -400,7 +400,7 @@
 				9BBC132F1AB2E21E00B42C5D /* 波霸豆花.jpg */,
 				9BBC13301AB2E21E00B42C5D /* 波霸豆花.png */,
 				9BBC13311AB2E21E00B42C5D /* 花生.png */,
-				9BBC13321AB2E21E00B42C5D /* 花生豆花.png */,
+				9BBC13321AB2E21E00B42C5D /* flowerfreshbeanflower.png */,
 				9BBC134B1AB3017A00B42C5D /* 紅豆豆花.png */,
 				9BBC13331AB2E21E00B42C5D /* 珍珠.png */,
 				9BBC13341AB2E21E00B42C5D /* 珍珠豆花.png */,
@@ -511,7 +511,7 @@
 				9BBC13491AB2E21E00B42C5D /* 綠豆豆花.png in Resources */,
 				9BBC133C1AB2E21E00B42C5D /* 豆花.png in Resources */,
 				9BBC13451AB2E21E00B42C5D /* 珍珠豆花.png in Resources */,
-				9BBC13431AB2E21E00B42C5D /* 花生豆花.png in Resources */,
+				9BBC13431AB2E21E00B42C5D /* flowerfreshbeanflower.png in Resources */,
 				9FAA2FEF1AB1B8690017BC16 /* TEDVC2.xib in Resources */,
 				81EF01EB1AB700FF00EFA1F3 /* btn4.ico in Resources */,
 				81EF01E81AB700FF00EFA1F3 /* btn1.png in Resources */,
