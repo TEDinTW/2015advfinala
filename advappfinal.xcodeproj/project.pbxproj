@@ -38,6 +38,7 @@
 		81A252C61AB1BA7500F9E5F2 /* app-icon-01.psd in Resources */ = {isa = PBXBuildFile; fileRef = 81A252C41AB1BA7500F9E5F2 /* app-icon-01.psd */; };
 		81A252C81AB1BE8B00F9E5F2 /* 水缸豆花02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81A252C71AB1BE8B00F9E5F2 /* 水缸豆花02.jpg */; };
 		81CFB8771AAF1399000A9C7F /* JukunProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CFB8761AAF1399000A9C7F /* JukunProducts.m */; };
+		81FB01911AB6ED5A004FBBAC /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FB01901AB6ED5A004FBBAC /* Main2.storyboard */; };
 		9BBC13031AB1C19D00B42C5D /* ZuProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC13021AB1C19D00B42C5D /* ZuProduct.m */; };
 		9BBC133A1AB2E21E00B42C5D /* 大豆.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13291AB2E21E00B42C5D /* 大豆.png */; };
 		9BBC133B1AB2E21E00B42C5D /* 大豆豆花.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC132A1AB2E21E00B42C5D /* 大豆豆花.png */; };
@@ -130,6 +131,7 @@
 		81A252C71AB1BE8B00F9E5F2 /* 水缸豆花02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "水缸豆花02.jpg"; sourceTree = "<group>"; };
 		81CFB8751AAF1399000A9C7F /* JukunProducts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JukunProducts.h; sourceTree = "<group>"; };
 		81CFB8761AAF1399000A9C7F /* JukunProducts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JukunProducts.m; sourceTree = "<group>"; };
+		81FB01901AB6ED5A004FBBAC /* Main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
 		9BBC13011AB1C19D00B42C5D /* ZuProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZuProduct.h; sourceTree = "<group>"; };
 		9BBC13021AB1C19D00B42C5D /* ZuProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZuProduct.m; sourceTree = "<group>"; };
 		9BBC13291AB2E21E00B42C5D /* 大豆.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "大豆.png"; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				812FFE0B1AA9CD890001373A /* APPGeneralHeader.h */,
 				812FFE0E1AA9D18A0001373A /* APPGTool.h */,
 				812FFE0F1AA9D18A0001373A /* APPGTool.m */,
+				81FB01901AB6ED5A004FBBAC /* Main2.storyboard */,
 			);
 			path = advappfinal;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				9BBC13461AB2E21E00B42C5D /* 紅豆.png in Resources */,
 				812FFE191AA9DF230001373A /* 1_about1.json in Resources */,
 				9BBC13411AB2E21E00B42C5D /* 波霸豆花.png in Resources */,
+				81FB01911AB6ED5A004FBBAC /* Main2.storyboard in Resources */,
 				9BBC133B1AB2E21E00B42C5D /* 大豆豆花.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
