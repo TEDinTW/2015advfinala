@@ -8,22 +8,21 @@
 
 #import "TEDConfirmVC.h"
 
-@interface TEDConfirmVC ()
+@interface TEDConfirmVC ()<UITableViewDataSource,UITableViewDelegate>
 {
 
  
 }
 @end
-
 @implementation TEDConfirmVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-//    _dataCell.delegate=self;
-//    _dataCell.dataSource=self;
+    _tableViewTest.delegate=self;
+    _tableViewTest.dataSource=self;
     
-    NSLog(@"%@",self.order.count);
+   // NSLog(@"%@",self.order.count);
     
     NSLog(@"%d",[[self.order objectAtIndex:0]objectForKey:@"mProName"]);
 }
@@ -34,25 +33,25 @@
 }
 
 
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-//    return [self.order count];
-//}
-//
-//// Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-//// Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-//
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+
+// Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
+// Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
 //    UITableViewCell* cell=[tableView dequeueReusableCellWithIdentifier:@"dataCell"];
 //    if(!cell){
 //        [tableView registerNib:[UINib nibWithNibName:@"" bundle:nil] forCellReuseIdentifier:@"dataCell"];
 //        cell=[tableView dequeueReusableCellWithIdentifier:@"dataCell"];
 //    }
-//    
-//   //_dataCell = [[self.order objectAtIndex:indexPath.row]objectForKey:@"mProName"];
-//    
-//    return cell;
-//}
+    
+   //_dataCell = [[self.order objectAtIndex:indexPath.row]objectForKey:@"mProName"];
+    
+    return 0;
+}
 /*
 #pragma mark - Navigation
 

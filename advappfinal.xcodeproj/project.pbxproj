@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F11198F1AB029BF00FF1FC6 /* AboutHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F11198E1AB029BF00FF1FC6 /* AboutHomeVC.m */; };
 		3F1119911AB02C9C00FF1FC6 /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F1119901AB02C9C00FF1FC6 /* about.jpg */; };
+		811405781AB7072F006951AA /* TEDConfirmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 811405771AB7072F006951AA /* TEDConfirmVC.xib */; };
 		812FFDC81AA9C9420001373A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDC71AA9C9420001373A /* main.m */; };
 		812FFDCB1AA9C9420001373A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDCA1AA9C9420001373A /* AppDelegate.m */; };
 		812FFDCE1AA9C9420001373A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDCD1AA9C9420001373A /* ViewController.m */; };
@@ -61,7 +62,6 @@
 		9FAA2FEF1AB1B8690017BC16 /* TEDVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FAA2FED1AB1B8690017BC16 /* TEDVC2.xib */; };
 		D29F26FA1AB1BA8D004C8536 /* sky07290921VC.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F26F91AB1BA8D004C8536 /* sky07290921VC.m */; };
 		D29F27011AB1D879004C8536 /* TEDConfirmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F26FF1AB1D879004C8536 /* TEDConfirmVC.m */; };
-		D29F27021AB1D879004C8536 /* TEDConfirmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29F27001AB1D879004C8536 /* TEDConfirmVC.xib */; };
 		D29F27051AB1DA2B004C8536 /* DetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F27041AB1DA2B004C8536 /* DetailVC.m */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +79,7 @@
 		3F11198D1AB029BF00FF1FC6 /* AboutHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutHomeVC.h; sourceTree = "<group>"; };
 		3F11198E1AB029BF00FF1FC6 /* AboutHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutHomeVC.m; sourceTree = "<group>"; };
 		3F1119901AB02C9C00FF1FC6 /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = about.jpg; sourceTree = "<group>"; };
+		811405771AB7072F006951AA /* TEDConfirmVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TEDConfirmVC.xib; sourceTree = "<group>"; };
 		812FFDC21AA9C9420001373A /* advappfinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = advappfinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		812FFDC61AA9C9420001373A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		812FFDC71AA9C9420001373A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -158,7 +159,6 @@
 		D29F26F91AB1BA8D004C8536 /* sky07290921VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sky07290921VC.m; sourceTree = SOURCE_ROOT; };
 		D29F26FE1AB1D879004C8536 /* TEDConfirmVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEDConfirmVC.h; sourceTree = "<group>"; };
 		D29F26FF1AB1D879004C8536 /* TEDConfirmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDConfirmVC.m; sourceTree = "<group>"; };
-		D29F27001AB1D879004C8536 /* TEDConfirmVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TEDConfirmVC.xib; sourceTree = "<group>"; };
 		D29F27031AB1DA2B004C8536 /* DetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailVC.h; sourceTree = "<group>"; };
 		D29F27041AB1DA2B004C8536 /* DetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -331,7 +331,7 @@
 			children = (
 				D29F26FE1AB1D879004C8536 /* TEDConfirmVC.h */,
 				D29F26FF1AB1D879004C8536 /* TEDConfirmVC.m */,
-				D29F27001AB1D879004C8536 /* TEDConfirmVC.xib */,
+				811405771AB7072F006951AA /* TEDConfirmVC.xib */,
 				816490221AAF1A1800F8DD6B /* AttenteVC.h */,
 				816490231AAF1A1800F8DD6B /* AttenteVC.m */,
 				81CFB8751AAF1399000A9C7F /* JukunProducts.h */,
@@ -473,9 +473,9 @@
 				9BBC13451AB2E21E00B42C5D /* 珍珠豆花.png in Resources */,
 				9BBC13431AB2E21E00B42C5D /* 花生豆花.png in Resources */,
 				9FAA2FEF1AB1B8690017BC16 /* TEDVC2.xib in Resources */,
+				811405781AB7072F006951AA /* TEDConfirmVC.xib in Resources */,
 				81A252C61AB1BA7500F9E5F2 /* app-icon-01.psd in Resources */,
 				812FFE1B1AA9DF230001373A /* 3_product1.json in Resources */,
-				D29F27021AB1D879004C8536 /* TEDConfirmVC.xib in Resources */,
 				812FFE181AA9DF230001373A /* 0_home1.json in Resources */,
 				81A252C81AB1BE8B00F9E5F2 /* 水缸豆花02.jpg in Resources */,
 				812FFDD61AA9C9420001373A /* LaunchScreen.xib in Resources */,

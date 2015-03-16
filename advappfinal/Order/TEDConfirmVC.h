@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TEDConfirmVC : UIViewController
+@property (strong, nonatomic) IBOutlet UITableView *tableViewTest;
 @property (strong,nonatomic) NSArray *order;
 @end
