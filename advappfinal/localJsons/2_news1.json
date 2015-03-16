@@ -1,5 +1,17 @@
-{
-  "imgURL": "ada2.gif",
-  "msg1": "致力於和平",
-  "msg2": "沒有人能帶給你平靜，只有你自己 ~愛默生\r 只是談論和平並不夠，人們必須相信它；只是相信和平並不夠，人們必須去實踐 ~愛蓮娜．羅斯福"
-}
+ [
+  {
+  "title": "news1",
+  "content": "the content of news1",
+  "update_time": "time1"
+  },
+  {
+  "title": "news2",
+  "content": "the content of news2",
+  "update_time": "time2"
+  },
+  {
+  "title": "news3",
+  "content": "the content of news3",
+  "update_time": "time3"
+  }
+  ]
