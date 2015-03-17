@@ -9,8 +9,8 @@ import UIKit
 import MapKit
 
 @objc
-class MapVC: UIViewController {
-    
+class MapVC : UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,6 +21,18 @@ class MapVC: UIViewController {
         let array = NSArray(objects:currentLocation, taipei101)
         let b = NSDictionary(object:MKLaunchOptionsDirectionsModeDriving, forKey:MKLaunchOptionsDirectionsModeKey )
         MKMapItem.openMapsWithItems(array, launchOptions: b)
+        
+        
+        var btn1 = UIButton.buttonWithType(UIButtonType.System) as UIButton
+        btn1.backgroundColor=UIColor.greenColor()
+        btn1.frame=CGRectMake(100, 100, 100, 100);
+        btn1.addTarget(self, action: "pushBtn:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(btn1)
+        
+    }
+    func pushBtn(btn1:UIButton){
+        
+        self.navigationController?.popViewControllerAnimated(true)
     }
 
 }
