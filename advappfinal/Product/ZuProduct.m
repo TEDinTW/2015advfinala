@@ -7,6 +7,7 @@
 //
 
 #import "ZuProduct.h"
+#import "zuProductDetail.h"
 
 @interface ZuProduct ()
 //主餐View
@@ -176,6 +177,24 @@
     [self mainViewBtnGet];
 
  }
+
+#pragma mark - 下一頁
+-(void)prePageButton:(UIButton*)sender{
+    NSLog(@"上一頁");
+    //     [self performSegueWithIdentifier:@"ZuProduct" sender:nil];
+    //    [self dismissViewControllerAnimated:YES completion:nil];
+    ZuProduct *zuPrdDetail;
+    zuPrdDetail=[self.storyboard instantiateViewControllerWithIdentifier:@"zuProductDetail"];
+    //    =[[ZuProduct alloc]init]; //回到上一頁
+    [self presentViewController:zuPrdDetail animated:YES completion:nil];
+
+//
+//    UIButton *preButton=[UIButton buttonWithType:UIButtonTypeRoundedRect]; //圓角button
+//    [preButton setFrame:CGRectMake( 300, 634, 63, 30)];
+//    [preButton setTitle:@"上一頁" forState:UIControlStateNormal];
+//    [preButton addTarget:self action:@selector(prePageButton:) forControlEvents:UIControlEventTouchUpInside];
+}
+
 /*
 #pragma mark - Navigation
 

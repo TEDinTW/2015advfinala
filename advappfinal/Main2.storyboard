@@ -330,7 +330,7 @@
         <!--Item-->
         <scene sceneID="8H0-R3-feQ">
             <objects>
-                <viewController id="NV9-6e-y1r" customClass="ZuProduct" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="zuProduct" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NV9-6e-y1r" customClass="ZuProduct" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MhN-Pt-pbt"/>
                         <viewControllerLayoutGuide type="bottom" id="3En-tW-Tgj"/>
@@ -452,12 +452,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jwr-k8-ecv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="dy7-iT-3w5"/>
             </objects>
-            <point key="canvasLocation" x="316.5" y="1253.5"/>
+            <point key="canvasLocation" x="372.5" y="1961.5"/>
         </scene>
         <!--Zu Product Detail-->
         <scene sceneID="dJh-mi-6c0">
             <objects>
-                <viewController id="ma1-gi-XCg" customClass="zuProductDetail" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="zuProductDetail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ma1-gi-XCg" customClass="zuProductDetail" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H45-6G-ahk"/>
                         <viewControllerLayoutGuide type="bottom" id="nkL-6l-kgA"/>
