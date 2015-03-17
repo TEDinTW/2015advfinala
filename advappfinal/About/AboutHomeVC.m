@@ -34,7 +34,9 @@
    [self loadJSON];
 
     vc1=[[MapVC alloc]init];
-    [self.view addSubview:vc1.view];
+//    [self.navigationController pushViewController:vc1 animated:YES];
+//    [self presentViewController:vc1 animated:YES completion:nil];
+//    [self.view addSubview:vc1.view];
 }
 
 - (void)didReceiveMemoryWarning {
