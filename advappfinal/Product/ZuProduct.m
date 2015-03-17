@@ -30,9 +30,7 @@
     //mainView初始位置
     self.mainView.frame = CGRectMake(27, 670, self.mainView.frame.size.width, self.mainView.frame.size.height);
     //secView初始狀態
-    self.secView.hidden=YES;
-   // self.secView.frame=CGPointMake(20, 40);
-    
+    self.secView.hidden=YES;    
 //    //測試用得Btn
 //    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(50, 50, 50, 50)];
 //    btn.backgroundColor = [UIColor redColor];
@@ -44,7 +42,8 @@
 //    btn.backgroundColor = [UIColor redColor];
 //    [self.view addSubview:mainViewBtn];
 //    [btn addTarget:self action:@selector(mainViewBtnGet) forControlEvents:UIControlEventTouchUpInside];
-    main = sec = 0;
+    main = 0;
+    sec = 0;
 //    //productViewBtn
     [self mainViewBtn];
     
@@ -116,40 +115,12 @@
     for (btn0 in _mainBtnCollection) {
         
         [btn0 addTarget:self action:@selector(mBtnHandle:) forControlEvents:UIControlEventTouchUpInside];
-        
-//        [btn0 addTarget:self action:@selector(testViewHidden) forControlEvents:UIControlEventTouchUpInside];
-//        [btn0 addTarget:self action:@selector(sendMainTag:) forControlEvents:UIControlEventTouchUpInside];
-//        [btn0 addTarget:self action:@selector(mainViewBtnGet) forControlEvents:UIControlEventTouchUpInside];
-
-//        switch (btn0.tag) {
-//            case 1:
-//                [btn0 addTarget:self action:@selector(sendMainTag:) forControlEvents:UIControlEventTouchUpInside];
-//                NSLog(@"tag = 11");
-//                break;
-//            case 2:
-//                [btn0 addTarget:self action:@selector(sendMainTag:) forControlEvents:UIControlEventTouchUpInside];
-//                NSLog(@"tag = 22");
-//                break;
-//            case 3:
-//                [btn0 addTarget:self action:@selector(sendMainTag:) forControlEvents:UIControlEventTouchUpInside];
-//                NSLog(@"tag = 33");
-//                break;
-//            case 4:
-//                [btn0 addTarget:self action:@selector(sendMainTag:) forControlEvents:UIControlEventTouchUpInside];
-//                NSLog(@"tag = 44");
-//                break;
-//                
-//            default:
-//                break;
-//        }
-
     }
 }
 
 -(void)sendMainTag:(UIButton *)sender{
     main = sender.tag;
-//    main=[NSString stringWithFormat:@"%ld",(long)sender.tag];
-    NSLog(@"%@",main);
+    NSLog(@"%d",main);
 
 }
 
@@ -159,68 +130,31 @@
     for (btn1 in _secBtnCollection) {
         
         [btn1 addTarget:self action:@selector(sBtnHandle:) forControlEvents:UIControlEventTouchUpInside];
-        
-//        [btn1 addTarget:self action:@selector(testViewHidden) forControlEvents:UIControlEventTouchUpInside];
-//        [btn1 addTarget:self action:@selector(sendSecTag:) forControlEvents:UIControlEventTouchUpInside];
-//        [btn1 addTarget:self action:@selector(mainViewBtnGet) forControlEvents:UIControlEventTouchUpInside];
-        
-//        switch (btn1.tag) {
-//            case 1:
-//                [btn1 addTarget:self action:@selector(sendSecTag:) forControlEvents:UIControlEventTouchUpInside];
-//                NSLog(@"tag = 1");
-//                break;
-//            case 2:
-//                [btn1 addTarget:self action:@selector(sendSecTag:) forControlEvents:UIControlEventTouchUpInside];
-//                NSLog(@"tag = 2");
-//                break;
-//            case 3:
-//                [btn1 addTarget:self action:@selector(sendSecTag:) forControlEvents:UIControlEventTouchUpInside];
-//                NSLog(@"tag = 3");
-//                break;
-//            case 4:
-//                [btn1 addTarget:self action:@selector(sendSecTag:) forControlEvents:UIControlEventTouchUpInside];
-//                NSLog(@"tag = 4");
-//                break;
-//            case 5:
-//                [btn1 addTarget:self action:@selector(sendSecTag:) forControlEvents:UIControlEventTouchUpInside];
-//                NSLog(@"tag = 5");
-//                break;
-//            case 6:
-//                [btn1 addTarget:self action:@selector(sendSecTag:) forControlEvents:UIControlEventTouchUpInside];
-//                NSLog(@"tag = 6");
-//                break;
-//            case 7:
-//                [btn1 addTarget:self action:@selector(sendSecTag:) forControlEvents:UIControlEventTouchUpInside];
-//                NSLog(@"tag = 7");
-//                break;
-//                
-//            default:
-//                break;
-//        }
+
     }
 }
 //按鈕secTag值傳遞
 -(void)sendSecTag:(UIButton *)sender{
     sec = sender.tag;
-//    sec=[NSString stringWithFormat:@"_%ld.jpg",(long)sender.tag];
     NSLog(@"%d",sec);
 }
 
 -(void)mainViewBtnGet{
     if (sec == 0) {
-        mainViewImage = @"%d.jpg",main;
-//        mainViewImage = [main stringByAppendingString:sec];
-        UIImage *proImg = [UIImage imageNamed:mainViewImage];
-        [_productView setBackgroundColor:[UIColor colorWithPatternImage:proImg]];
-    }else{
-        mainViewImage = @"%d%d.jpg",main,sec;
+        mainViewImage = [NSString stringWithFormat:@"%d.jpg",main];
+        NSLog(@"%@",mainViewImage);
+
 //        mainViewImage = [main stringByAppendingString:@".jpg"];
         UIImage *proImg = [UIImage imageNamed:mainViewImage];
         [_productView setBackgroundColor:[UIColor colorWithPatternImage:proImg]];
+    }else{
+        mainViewImage = [NSString stringWithFormat:@"%d_%d.jpg",main,sec];
+        NSLog(@"%@",mainViewImage);
+
+//        mainViewImage = [main stringByAppendingString:sec];
+        UIImage *proImg = [UIImage imageNamed:mainViewImage];
+        [_productView setBackgroundColor:[UIColor colorWithPatternImage:proImg]];
     }
-    
-    
-    NSLog(@"123123");
 }
 
 -(void)mainViewBtn{
@@ -239,6 +173,8 @@
 -(void)mBtnHandle:(UIButton *)sender{
     [self testViewHidden];
     [self sendMainTag:sender];
+    [self mainViewBtnGet];
+
  }
 /*
 #pragma mark - Navigation
