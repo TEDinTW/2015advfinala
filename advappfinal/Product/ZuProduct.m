@@ -15,7 +15,9 @@
 //配料View
 @property (weak, nonatomic) IBOutlet UIView *secView;
 //產品View
-@property (strong, nonatomic) IBOutlet UIView *productView;
+@property (weak, nonatomic) IBOutlet UIButton *prdImgBtn;
+
+- (IBAction)prdImgBtnAction:(id)sender;
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *secBtnCollection;
 
@@ -46,7 +48,7 @@
     main = 0;
     sec = 0;
 //    //productViewBtn
-    [self mainViewBtn];
+  //  [self mainViewBtn];
     
     
     //mainView 飛入動畫
@@ -147,23 +149,25 @@
 
 //        mainViewImage = [main stringByAppendingString:@".jpg"];
         UIImage *proImg = [UIImage imageNamed:mainViewImage];
-        [_productView setBackgroundColor:[UIColor colorWithPatternImage:proImg]];
+        [self.prdImgBtn setBackgroundImage:proImg forState:UIControlStateNormal];
+//        [_productView setBackgroundColor:[UIColor colorWithPatternImage:proImg]];
     }else{
         mainViewImage = [NSString stringWithFormat:@"%d_%d.jpg",main,sec];
         NSLog(@"%@",mainViewImage);
-
-//        mainViewImage = [main stringByAppendingString:sec];
+//
+////        mainViewImage = [main stringByAppendingString:sec];
         UIImage *proImg = [UIImage imageNamed:mainViewImage];
-        [_productView setBackgroundColor:[UIColor colorWithPatternImage:proImg]];
+//        [_productView setBackgroundColor:[UIColor colorWithPatternImage:proImg]];
+        [self.prdImgBtn setBackgroundImage:proImg forState:UIControlStateNormal];
     }
 }
 
--(void)mainViewBtn{
-    //mainView的Btn
-    UIButton *MVBtn = [[UIButton alloc]initWithFrame:CGRectMake(83, 225, 218, 218)];
-    [self.view addSubview:MVBtn];
-    [MVBtn addTarget:self action:@selector(mainViewBtnGet) forControlEvents:UIControlEventTouchUpInside];
-}
+//-(void)mainViewBtn{
+//    //mainView的Btn
+//    UIButton *MVBtn = [[UIButton alloc]initWithFrame:CGRectMake(83, 225, 218, 218)];
+//    [self.view addSubview:MVBtn];
+//    [MVBtn addTarget:self action:@selector(mainViewBtnGet) forControlEvents:UIControlEventTouchUpInside];
+//}
 
 -(void)sBtnHandle:(UIButton *)sender{
     [self testViewHidden];
@@ -189,10 +193,6 @@
     [self presentViewController:zuPrdDetail animated:YES completion:nil];
 
 //
-//    UIButton *preButton=[UIButton buttonWithType:UIButtonTypeRoundedRect]; //圓角button
-//    [preButton setFrame:CGRectMake( 300, 634, 63, 30)];
-//    [preButton setTitle:@"上一頁" forState:UIControlStateNormal];
-//    [preButton addTarget:self action:@selector(prePageButton:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 /*
@@ -205,4 +205,9 @@
 }
 */
 
+- (IBAction)prdImgBtnAction:(id)sender {
+    NSLog(@"傳送＋換頁");
+    ZuProduct *detailPage=[self.storyboard instantiateViewControllerWithIdentifier:@"zuProductDetail"];
+    [self presentViewController:detailPage animated:YES completion:nil];
+}
 @end
