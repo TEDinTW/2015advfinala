@@ -30,8 +30,10 @@
     NSArray *jsonObj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
     for (NSDictionary *p in jsonObj)
     {
-        locationX = [p objectForKey:@"locationX"];
-        locationY = [p objectForKey:@"locationY"];
+        NSNumber *number=(NSNumber *)[p objectForKey:@"locationX"];
+        locationX = [number doubleValue];
+        number=(NSNumber *)[p objectForKey:@"locationY"];
+        locationY = [number doubleValue];
     }
     
     
