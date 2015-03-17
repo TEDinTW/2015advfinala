@@ -373,7 +373,7 @@
         <!--Item-->
         <scene sceneID="8H0-R3-feQ">
             <objects>
-                <viewController id="NV9-6e-y1r" customClass="ZuProduct" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="zuProduct" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NV9-6e-y1r" customClass="ZuProduct" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MhN-Pt-pbt"/>
                         <viewControllerLayoutGuide type="bottom" id="3En-tW-Tgj"/>
@@ -500,7 +500,7 @@
         <!--Zu Product Detail-->
         <scene sceneID="dJh-mi-6c0">
             <objects>
-                <viewController id="ma1-gi-XCg" customClass="zuProductDetail" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="zuProductDetail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ma1-gi-XCg" customClass="zuProductDetail" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H45-6G-ahk"/>
                         <viewControllerLayoutGuide type="bottom" id="nkL-6l-kgA"/>
@@ -677,4 +677,7 @@
         <image name="豆花.png" width="154" height="154"/>
         <image name="豆花1.png" width="207" height="207"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2PK-jh-xfk"/>
+    </inferredMetricsTieBreakers>
 </document>

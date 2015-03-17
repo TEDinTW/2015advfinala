@@ -32,9 +32,11 @@
     // Do any additional setup after loading the view.
     
    [self loadJSON];
+    self.title=@"關於水缸豆花";
 
-    vc1=[[MapVC alloc]init];
-    [self.view addSubview:vc1.view];
+//    [self.navigationController pushViewController:vc1 animated:YES];
+//    [self presentViewController:vc1 animated:YES completion:nil];
+//    [self.view addSubview:vc1.view];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -89,5 +91,10 @@
 //    MySwiftClass *swiftObject = [[MySwiftClass alloc] init];
 //    [swiftObject swiftMethod];
 }
-
+/*
+- (IBAction)pushBtn:(UIButton *)sender {
+    vc1=[[MapVC alloc]init];
+    [self.navigationController pushViewController:vc1 animated:YES];
+}
+*/
 @end
