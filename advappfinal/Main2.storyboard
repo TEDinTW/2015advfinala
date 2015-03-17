@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ryK-ZG-CWx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ryK-ZG-CWx">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -556,7 +556,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pushBtn:" destination="lch-01-2Db" eventType="touchUpInside" id="fg1-JR-mWS"/>
+                                    <segue destination="oaa-nU-QDy" kind="show" id="h42-K6-aMf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -589,6 +589,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0a-em-5YC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="248.5" y="107.5"/>
+        </scene>
+        <!--About MapVC-->
+        <scene sceneID="mwa-ex-Tww">
+            <objects>
+                <viewController id="oaa-nU-QDy" customClass="AboutMapVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X5w-eZ-T5F"/>
+                        <viewControllerLayoutGuide type="bottom" id="bOh-Fx-HO2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YLa-Ui-JYp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bht-ch-bcx">
+                                <rect key="frame" x="8" y="15" width="43" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lch-01-2Db" kind="show" id="2PK-jh-xfk"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="n07-5p-Xt0">
+                                <rect key="frame" x="0.0" y="51" width="320" height="517"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="n07-5p-Xt0" secondAttribute="bottom" id="Ejq-rm-G93"/>
+                            <constraint firstItem="Bht-ch-bcx" firstAttribute="top" secondItem="YLa-Ui-JYp" secondAttribute="topMargin" constant="15" id="ROh-Bh-Csy"/>
+                            <constraint firstItem="Bht-ch-bcx" firstAttribute="leading" secondItem="YLa-Ui-JYp" secondAttribute="leadingMargin" constant="-8" id="UYN-bo-oYK"/>
+                            <constraint firstItem="n07-5p-Xt0" firstAttribute="leading" secondItem="YLa-Ui-JYp" secondAttribute="leading" id="cvN-aA-qJV"/>
+                            <constraint firstItem="n07-5p-Xt0" firstAttribute="top" secondItem="Bht-ch-bcx" secondAttribute="bottom" constant="1" id="lUf-Ys-ONF"/>
+                            <constraint firstAttribute="trailing" secondItem="n07-5p-Xt0" secondAttribute="trailing" id="tz5-Xq-aa8"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="myMap" destination="n07-5p-Xt0" id="Vp1-d6-G4h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDA-Th-fGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="683" y="107"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Wn4-rb-7u0">
@@ -631,4 +677,7 @@
         <image name="豆花.png" width="154" height="154"/>
         <image name="豆花1.png" width="207" height="207"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="2PK-jh-xfk"/>
+    </inferredMetricsTieBreakers>
 </document>

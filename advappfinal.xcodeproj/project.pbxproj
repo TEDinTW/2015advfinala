@@ -87,6 +87,7 @@
 		D29F26FA1AB1BA8D004C8536 /* sky07290921VC.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F26F91AB1BA8D004C8536 /* sky07290921VC.m */; };
 		D29F27011AB1D879004C8536 /* TEDConfirmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F26FF1AB1D879004C8536 /* TEDConfirmVC.m */; };
 		D29F27051AB1DA2B004C8536 /* DetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D29F27041AB1DA2B004C8536 /* DetailVC.m */; };
+		E64958941AB856BB00D6819E /* AboutMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E64958931AB856BB00D6819E /* AboutMapVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +219,8 @@
 		D29F26FF1AB1D879004C8536 /* TEDConfirmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEDConfirmVC.m; sourceTree = "<group>"; };
 		D29F27031AB1DA2B004C8536 /* DetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailVC.h; sourceTree = "<group>"; };
 		D29F27041AB1DA2B004C8536 /* DetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailVC.m; sourceTree = "<group>"; };
+		E64958921AB856BB00D6819E /* AboutMapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMapVC.h; sourceTree = "<group>"; };
+		E64958931AB856BB00D6819E /* AboutMapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMapVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +249,8 @@
 				3F11198D1AB029BF00FF1FC6 /* AboutHomeVC.h */,
 				3F11198E1AB029BF00FF1FC6 /* AboutHomeVC.m */,
 				81FB01921AB6EFD9004FBBAC /* advappfinal-MapVC-Swift.h */,
+				E64958921AB856BB00D6819E /* AboutMapVC.h */,
+				E64958931AB856BB00D6819E /* AboutMapVC.m */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -643,6 +648,7 @@
 				812FFE031AA9C9EF0001373A /* AFSecurityPolicy.m in Sources */,
 				812FFE011AA9C9EF0001373A /* AFHTTPSessionManager.m in Sources */,
 				9BBC134F1AB3056A00B42C5D /* zuProductDetail.m in Sources */,
+				E64958941AB856BB00D6819E /* AboutMapVC.m in Sources */,
 				812FFE051AA9C9EF0001373A /* AFURLRequestSerialization.m in Sources */,
 				81CFB8771AAF1399000A9C7F /* JukunProducts.m in Sources */,
 				812FFE0A1AA9CCFE0001373A /* AboutMeVC.m in Sources */,
