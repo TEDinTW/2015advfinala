@@ -11,19 +11,20 @@
 @interface TEDConfirmVC ()<UITableViewDataSource,UITableViewDelegate>
 {
 
-  
+ 
 }
 @end
-
 @implementation TEDConfirmVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _tableViewTest.delegate=self;
+    _tableViewTest.dataSource=self;
     
-    NSLog(@"%@",self.order.count);
+    NSLog(@"%lu",(unsigned long)self.order.count);
     
-    NSLog(@"%d",[[self.order objectAtIndex:0]objectForKey:@"mProName"]);
+    NSLog(@"%@",[[self.order objectAtIndex:0]objectForKey:@"mProName"]);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,16 +41,16 @@
 // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    UITableViewCell* dataCell;
     UITableViewCell* cell=[tableView dequeueReusableCellWithIdentifier:@"dataCell"];
     if(!cell){
         [tableView registerNib:[UINib nibWithNibName:@"" bundle:nil] forCellReuseIdentifier:@"dataCell"];
         cell=[tableView dequeueReusableCellWithIdentifier:@"dataCell"];
     }
     
-   _cell_label_Data.text = [[self.order objectAtIndex:indexPath.row]objectForKey:@"mProName"];
+   dataCell = [[self.order objectAtIndex:indexPath.row]objectForKey:@"mProName"];
     
-    return cell;
+    return dataCell;
 }
 /*
 #pragma mark - Navigation

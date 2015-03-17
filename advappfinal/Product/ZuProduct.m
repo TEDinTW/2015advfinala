@@ -7,14 +7,20 @@
 //
 
 #import "ZuProduct.h"
+#import "zuProductDetail.h"
 
 @interface ZuProduct ()
 //主餐View
 @property (weak, nonatomic) IBOutlet UIView *mainView;
 //配料View
 @property (weak, nonatomic) IBOutlet UIView *secView;
+//產品View
+@property (strong, nonatomic) IBOutlet UIView *productView;
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *secBtnCollection;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *mainBtnCollection;
+
 @end
 
 @implementation ZuProduct
@@ -25,18 +31,33 @@
     //mainView初始位置
     self.mainView.frame = CGRectMake(27, 670, self.mainView.frame.size.width, self.mainView.frame.size.height);
     //secView初始狀態
-    self.secView.hidden=YES;
-   // self.secView.frame=CGPointMake(20, 40);
-    
-    //測試用得Btn
-    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-    btn.backgroundColor = [UIColor redColor];
-    [self.view addSubview:btn];
-    [btn addTarget:self action:@selector(testViewHidden) forControlEvents:UIControlEventTouchUpInside];
+    self.secView.hidden=YES;    
+//    //測試用得Btn
+//    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(50, 50, 50, 50)];
+//    btn.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:btn];
+//    [btn addTarget:self action:@selector(testViewHidden) forControlEvents:UIControlEventTouchUpInside];
 
+    //mainView的Btn
+//    UIButton *mainViewBtn = [[UIButton alloc]initWithFrame:CGRectMake(83, 225, 218, 218)];
+//    btn.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:mainViewBtn];
+//    [btn addTarget:self action:@selector(mainViewBtnGet) forControlEvents:UIControlEventTouchUpInside];
+    main = 0;
+    sec = 0;
+//    //productViewBtn
+    [self mainViewBtn];
+    
     
     //mainView 飛入動畫
     [self mainViewHiddenAnimated];
+    
+    
+    //mainView按鈕選項
+    [self mainBtnTag];
+
+    //secView按鈕選項
+    [self secBtnTag];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -89,6 +110,89 @@
             NSLog(@"finished = false");
         }
     }];
+}
+
+-(void)mainBtnTag{
+    for (btn0 in _mainBtnCollection) {
+        
+        [btn0 addTarget:self action:@selector(mBtnHandle:) forControlEvents:UIControlEventTouchUpInside];
+    }
+}
+
+-(void)sendMainTag:(UIButton *)sender{
+    main = sender.tag;
+    NSLog(@"%d",main);
+
+}
+
+
+
+-(void)secBtnTag{
+    for (btn1 in _secBtnCollection) {
+        
+        [btn1 addTarget:self action:@selector(sBtnHandle:) forControlEvents:UIControlEventTouchUpInside];
+
+    }
+}
+//按鈕secTag值傳遞
+-(void)sendSecTag:(UIButton *)sender{
+    sec = sender.tag;
+    NSLog(@"%d",sec);
+}
+
+-(void)mainViewBtnGet{
+    if (sec == 0) {
+        mainViewImage = [NSString stringWithFormat:@"%d.jpg",main];
+        NSLog(@"%@",mainViewImage);
+
+//        mainViewImage = [main stringByAppendingString:@".jpg"];
+        UIImage *proImg = [UIImage imageNamed:mainViewImage];
+        [_productView setBackgroundColor:[UIColor colorWithPatternImage:proImg]];
+    }else{
+        mainViewImage = [NSString stringWithFormat:@"%d_%d.jpg",main,sec];
+        NSLog(@"%@",mainViewImage);
+
+//        mainViewImage = [main stringByAppendingString:sec];
+        UIImage *proImg = [UIImage imageNamed:mainViewImage];
+        [_productView setBackgroundColor:[UIColor colorWithPatternImage:proImg]];
+    }
+}
+
+-(void)mainViewBtn{
+    //mainView的Btn
+    UIButton *MVBtn = [[UIButton alloc]initWithFrame:CGRectMake(83, 225, 218, 218)];
+    [self.view addSubview:MVBtn];
+    [MVBtn addTarget:self action:@selector(mainViewBtnGet) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)sBtnHandle:(UIButton *)sender{
+    [self testViewHidden];
+    [self sendSecTag:sender];
+    [self mainViewBtnGet];
+}
+
+-(void)mBtnHandle:(UIButton *)sender{
+    [self testViewHidden];
+    [self sendMainTag:sender];
+    [self mainViewBtnGet];
+
+ }
+
+#pragma mark - 下一頁
+-(void)prePageButton:(UIButton*)sender{
+    NSLog(@"上一頁");
+    //     [self performSegueWithIdentifier:@"ZuProduct" sender:nil];
+    //    [self dismissViewControllerAnimated:YES completion:nil];
+    ZuProduct *zuPrdDetail;
+    zuPrdDetail=[self.storyboard instantiateViewControllerWithIdentifier:@"zuProductDetail"];
+    //    =[[ZuProduct alloc]init]; //回到上一頁
+    [self presentViewController:zuPrdDetail animated:YES completion:nil];
+
+//
+//    UIButton *preButton=[UIButton buttonWithType:UIButtonTypeRoundedRect]; //圓角button
+//    [preButton setFrame:CGRectMake( 300, 634, 63, 30)];
+//    [preButton setTitle:@"上一頁" forState:UIControlStateNormal];
+//    [preButton addTarget:self action:@selector(prePageButton:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 /*

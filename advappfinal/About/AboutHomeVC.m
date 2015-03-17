@@ -7,11 +7,12 @@
 //
 
 #import "AboutHomeVC.h"
-
+#import "advappfinal-Swift.h"
 
 @interface AboutHomeVC ()
 {
     NSString *tell;
+    MapVC *vc1;
 }
 @property (strong, nonatomic) IBOutlet UIImageView *imgView;
 @property (strong, nonatomic) IBOutlet UILabel *labelTitle;
@@ -22,8 +23,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnTel;
 - (IBAction)btnTel:(UIButton *)sender;
 
-
-
 @end
 
 @implementation AboutHomeVC
@@ -33,7 +32,11 @@
     // Do any additional setup after loading the view.
     
    [self loadJSON];
+    self.title=@"關於水缸豆花";
 
+//    [self.navigationController pushViewController:vc1 animated:YES];
+//    [self presentViewController:vc1 animated:YES completion:nil];
+//    [self.view addSubview:vc1.view];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,6 +83,17 @@
     NSURL *url = [NSURL URLWithString:tel];
     NSLog(@"%@",url);
     [[UIApplication sharedApplication]openURL:url];
+}
+
+-(void)showMap{
+//    MapVC1 *vc1=[[MapVC1 alloc]init];
+    
+//    MySwiftClass *swiftObject = [[MySwiftClass alloc] init];
+//    [swiftObject swiftMethod];
+}
+- (IBAction)pushBtn:(UIButton *)sender {
+    vc1=[[MapVC alloc]init];
+    [self.navigationController pushViewController:vc1 animated:YES];
 }
 
 @end

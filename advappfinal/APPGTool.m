@@ -25,4 +25,10 @@
     }
     return str;
 }
+
++(NSString *)getTEDFilePathWithFileName:(NSString *)fileName{
+    NSString *dir=[NSTemporaryDirectory() stringByAppendingString:@"/TED/data"];
+    return dir;
+}
+
 @end
