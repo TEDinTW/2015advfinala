@@ -25,10 +25,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view
+  //  self.view.backgroundColor=[UIColor grayColor];
+  //  self.view.backgroundColor=[UIColor colorWithWhite:0.5 alpha:6];
     [self getJson];
     [self productNameLabel];
     [self productNameImage];
     [self productIntroView];
+    [self.view addSubview:introLabel];
 }
 
 
@@ -84,18 +87,16 @@
     upperView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 375, 667)];
     upperView.backgroundColor = [UIColor blackColor];
     upperView.alpha=0.0f;
-    upperView.userInteractionEnabled=NO;
+    upperView.userInteractionEnabled=NO; //不遮下面的元件
     
+    //介紹文字
     introLabel = [[UILabel alloc]initWithFrame:CGRectMake( 16, 532, 343, 127)];
-   // introLabel.backgroundColor = [UIColor redColor];
+    //introLabel.backgroundColor = [UIColor redColor];
     introLabel.textColor=[UIColor whiteColor];
     introLabel.text=[dict1 objectForKey:@"prdIntro"];
-    [introLabel setNumberOfLines:0];
-    [self.view addSubview:introLabel];
+    [introLabel setNumberOfLines:0];  //換行
+
     introLabel.alpha=0.0f;
-
-
-   // upperView.hidden=YES;
 }
 
 
@@ -118,19 +119,21 @@
 
 
 
-#pragma mark - upperView的動畫
+#pragma mark - upperView的淡入淡出動畫
 -(void)upperViewAnimated{
     if(upperView.alpha==0.0f){
         [UIView animateWithDuration:0.5 animations:^{
             upperView.frame=CGRectMake(0, 0, 375, 667);
             upperView.alpha=0.7f;
             introLabel.alpha=1.0f;
+            self.view.backgroundColor=[UIColor grayColor];
         }completion:^(BOOL finished){}];
     }else{
         [UIView animateWithDuration:0.5 animations:^{
             upperView.frame=CGRectMake(0, 0, 375, 667);
             upperView.alpha=0.0f;
             introLabel.alpha=0.0f;
+            self.view.backgroundColor=[UIColor whiteColor];
         } completion:^(BOOL finished){}];
     }
 }
