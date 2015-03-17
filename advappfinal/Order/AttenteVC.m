@@ -9,6 +9,9 @@
 #import "AttenteVC.h"
 #import "JukunProducts.h"
 #import "TEDConfirmVC.h"
+#import "AttenteVC2.h"
+
+
 @interface AttenteVC ()<UITableViewDataSource,UITableViewDelegate>{
     JukunProducts *jukunObj;
     NSInteger _selectRowInTableView1;
@@ -92,7 +95,7 @@
         _selectRowInTableView1=indexPath.row;
         _tableView2.frame=CGRectMake(137, 28, 10, 10);
         _tableView2.alpha=0.3;
-        [UIView animateWithDuration:1.0 animations:^{
+        [UIView animateWithDuration:0.5 animations:^{
             _tableView2.frame=CGRectMake(137, 28, 211, 300);
             _tableView2.alpha=1.0;
         }];
@@ -127,7 +130,7 @@
     [mDict setObject:[NSNumber numberWithDouble:_stepper.value] forKey:@"num"];
     
     [_order addObject:mDict];
-    test =1;
+   
     
 
 }
@@ -150,12 +153,20 @@
                 
                 if(_order.count != 0){
                     
-                    //    _order
-                    TEDConfirmVC *vc=[[TEDConfirmVC alloc]initWithNibName:@"TEDConfirmVC" bundle:nil];
+                    //用storyboard ID轉換頁面
+                    AttenteVC2* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"gotoData"];
                     vc.order=[NSArray arrayWithArray:_order];
-                    vc.view.frame=CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
                     [self presentViewController:vc animated:YES completion:nil];
                     
+                    
+                    //[self performSegueWithIdentifier:@"gotoData" sender:nil];
+//                    //    _order
+//                    TEDConfirmVC *vc=[[TEDConfirmVC alloc]initWithNibName:@"TEDConfirmVC" bundle:nil];
+//                    vc.order=[NSArray arrayWithArray:_order];
+//                    vc.view.frame=CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+//                    
+//                    [self presentViewController:vc animated:YES completion:nil];
+//                    //dismissViewController
                     
                 }else{
                     NSLog(@"請按加入");
@@ -180,6 +191,12 @@
     }
     
 }
+
+
+
+
+
+
 
 
 -(void)alertControllerWithTitle:(NSString *)title Message:(NSString *)strMsg{
