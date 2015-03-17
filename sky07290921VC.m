@@ -69,10 +69,13 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"DetailVC"]) {
-//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//        [[segue destinationViewController] setDetailItem:[json_array
-//                                                          objectAtIndex:indexPath.row]];
+    
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+        //利用index取得陣列內的物件
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        //使用segue將物件傳給DetailVC class
+        [[segue destinationViewController] setDetailItem:[news
+                                                          objectAtIndex:indexPath.row]];
     }
 
 }
