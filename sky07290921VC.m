@@ -25,8 +25,8 @@
     NSData *data = [NSData dataWithContentsOfFile:path];
     // (2) 解析 JSON 字串
     news = [NSJSONSerialization JSONObjectWithData:data
-                                                       options:NSJSONReadingMutableContainers
-                                                         error:nil];
+                                           options:NSJSONReadingMutableContainers
+                                             error:nil];
     // (3) 利用迴圈印出解析後的結果
     for (NSDictionary *p in news) {
         NSString *title = [p objectForKey:@"title"];
@@ -34,7 +34,7 @@
         NSString *update_time   = [p objectForKey:@"update_time"];
         NSLog(@"\n標題：%@\n內容：%@\n更新時間：%@", title, content, update_time);
     }
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -77,7 +77,11 @@
         [[segue destinationViewController] setDetailItem:[news
                                                           objectAtIndex:indexPath.row]];
     }
+    
+}
 
+-(void)viewWillAppear:(BOOL)animated{
+    self.navigationController.navigationBarHidden=YES;
 }
 
 @end
