@@ -52,21 +52,28 @@
     UITableViewCell* cell=[tableView dequeueReusableCellWithIdentifier:@"dataCell"];
     
     //objectAtIndex:_selectRowInTableView1]objectForKey:@"Menu_List"]
-    
-    
-    //努力尋找label中
-    UILabel* label = (UILabel *)[self.view viewWithTag:1];
-    [label setText:@"aaa"];
-    label.text = [[self.order objectAtIndex:_TableViewData]objectForKey:@"subProName"];
-    
-    
-    if(self.view.tag ==1){
-       //  = [[self.order objectAtIndex:_TableViewData]objectForKey:@"subProName"];
-        
+   
+    NSLog(@"data  :  %@",[[self.order objectAtIndex:_TableViewData]objectForKey:@"num"]);
 
-    //cell.textLabel.text = [[self.order objectAtIndex:_TableViewData]objectForKey:@"subProName"];
+    //努力尋找label中
+    for (UILabel *lbl in cell.contentView.subviews) {
+//        switch (lbl.tag) {
+//            case 11:
+//                lbl.text =[[self.order objectAtIndex:_TableViewData]objectForKey:@"subProName"];
+//                break;
+//            case 12:
+//                lbl.text =[[self.order objectAtIndex:_TableViewData]objectForKey:@"price"];
+//                break;
+//            case 13:
+//                lbl.text =[[self.order objectAtIndex:_TableViewData]objectForKey:@"num"];
+//                break;
+//        }
+                 NSLog(@"2  :  %@",cell.contentView.subviews);
+        NSLog(@"2-1  :  %@",lbl);
     }
-    return cell;
+
+    
+       return cell;
 }
 
 
