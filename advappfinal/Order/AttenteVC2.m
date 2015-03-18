@@ -53,23 +53,36 @@
     
     //objectAtIndex:_selectRowInTableView1]objectForKey:@"Menu_List"]
    
-    NSLog(@"data  :  %@",[[self.order objectAtIndex:_TableViewData]objectForKey:@"num"]);
 
+    NSLog(@"%@",[[self.order objectAtIndex:indexPath.row]objectForKey:@"subProName"]);
+    NSLog(@"%@",[[self.order objectAtIndex:indexPath.row]objectForKey:@"price"]);
+    NSLog(@"%@",[[self.order objectAtIndex:indexPath.row]objectForKey:@"num"]);
+
+    
+    
+    
+    
     //努力尋找label中
+     int prices;
     for (UILabel *lbl in cell.contentView.subviews) {
-//        switch (lbl.tag) {
-//            case 11:
-//                lbl.text =[[self.order objectAtIndex:_TableViewData]objectForKey:@"subProName"];
-//                break;
-//            case 12:
-//                lbl.text =[[self.order objectAtIndex:_TableViewData]objectForKey:@"price"];
-//                break;
-//            case 13:
-//                lbl.text =[[self.order objectAtIndex:_TableViewData]objectForKey:@"num"];
-//                break;
-//        }
-                 NSLog(@"2  :  %@",cell.contentView.subviews);
-        NSLog(@"2-1  :  %@",lbl);
+
+        switch (lbl.tag) {
+            case 11:
+                lbl.text =[[self.order objectAtIndex:indexPath.row]objectForKey:@"subProName"];
+                break;
+            case 12:
+                lbl.text =[[NSString alloc]initWithFormat:@"%@", [[self.order objectAtIndex:indexPath.row]objectForKey:@"num"]];
+                break;
+            case 13:
+                
+               
+                prices = [[[self.order objectAtIndex:indexPath.row]objectForKey:@"num"] intValue] * [[[self.order objectAtIndex:indexPath.row]objectForKey:@"price"] intValue];
+                lbl.text =[[NSString alloc]initWithFormat:@"%d", prices];
+                
+               
+                break;
+                
+            }
     }
 
     
