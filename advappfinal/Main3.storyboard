@@ -577,6 +577,7 @@
                             <constraint firstItem="Bz2-qm-uiL" firstAttribute="top" secondItem="zrw-BM-h1x" secondAttribute="bottom" constant="15" id="mwf-gs-B8b"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="cef-N2-IW4"/>
                     <connections>
                         <outlet property="btnTel" destination="Sme-td-BDw" id="Us7-TD-Usb"/>
                         <outlet property="imgView" destination="zrw-BM-h1x" id="OHS-pn-IU7"/>
@@ -587,7 +588,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o0a-em-5YC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="181" y="508"/>
+            <point key="canvasLocation" x="340" y="508"/>
         </scene>
         <!--About MapVC-->
         <scene sceneID="e3g-0U-aL7">
@@ -615,7 +616,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="lch-01-2Db" kind="show" id="Oi8-BZ-AJt"/>
+                                    <action selector="pushBackBtn:" destination="tqX-qc-nDM" eventType="touchUpInside" id="vJV-PK-FSh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -635,7 +636,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7a-fl-Pz4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1283" y="390"/>
+            <point key="canvasLocation" x="773" y="508"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Wn4-rb-7u0">
@@ -649,7 +650,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="lch-01-2Db" kind="show" id="xIe-i0-KDs"/>
+                        <segue destination="lch-01-2Db" kind="relationship" relationship="viewControllers" id="lK9-S2-nTu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjZ-6F-Rsr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -676,7 +677,4 @@
         <image name="豆漿豆花.png" width="167" height="159"/>
         <image name="豆花.png" width="154" height="154"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="xIe-i0-KDs"/>
-    </inferredMetricsTieBreakers>
 </document>

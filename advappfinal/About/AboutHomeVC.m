@@ -51,7 +51,9 @@
     
     NSArray *jsonObj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
     for (NSDictionary *p in jsonObj){
-        NSString *img = [p objectForKey:@"BGimg"];
+        
+        
+        NSString *img =[p objectForKey:@"BGimg"];
         NSString *title = [p objectForKey:@"title"];
         tell = [p objectForKey:@"tel"];
         NSString *address = [p objectForKey:@"address"];
