@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lch-01-2Db">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ryK-ZG-CWx">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -33,47 +33,11 @@
                         <viewControllerLayoutGuide type="bottom" id="FIh-y6-sbf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xWn-0S-ZNH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn2" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4p-jv-lyb">
-                                <rect key="frame" x="102" y="211" width="70" height="70"/>
-                                <state key="normal" title="btn2" image="豆花1.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn3" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lv-WU-Kk8">
-                                <rect key="frame" x="271" y="222" width="70" height="70"/>
-                                <state key="normal" title="btn3" image="豆漿1.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn4" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJg-9c-Qvm">
-                                <rect key="frame" x="102" y="313" width="70" height="70"/>
-                                <state key="normal" title="btn4" image="薏仁湯 1.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn5" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mQ-ce-dGd">
-                                <rect key="frame" x="271" y="313" width="70" height="70"/>
-                                <state key="normal" title="btn5" image="珍珠豆花1 .png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn6" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dB9-oN-ige">
-                                <rect key="frame" x="189" y="400" width="70" height="70"/>
-                                <state key="normal" title="btn6" image="紅豆豆花1.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn1" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ct-O0-QqQ">
-                                <rect key="frame" x="202" y="158" width="70" height="70"/>
-                                <state key="normal" title="btn1" image="豆漿豆花 1.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9s4-9t-koV">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9s4-9t-koV" userLabel="btn_bg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <state key="normal" title="Button" image="app-icon-01.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -81,12 +45,51 @@
                                     <segue destination="mUa-Q8-KgD" kind="show" id="q1v-8z-UGd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn2" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4p-jv-lyb">
+                                <rect key="frame" x="21" y="128" width="70" height="70"/>
+                                <state key="normal" backgroundImage="home_btn1.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn3" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lv-WU-Kk8" userLabel="btn3">
+                                <rect key="frame" x="328" y="109" width="70" height="70"/>
+                                <state key="normal" backgroundImage="home_btn3.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn4" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJg-9c-Qvm" userLabel="btn4">
+                                <rect key="frame" x="16" y="363" width="70" height="70"/>
+                                <state key="normal" backgroundImage="home_btn4.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mQ-ce-dGd" userLabel="btn5">
+                                <rect key="frame" x="333" y="407" width="70" height="70"/>
+                                <state key="normal" backgroundImage="home_btn5.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn6" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dB9-oN-ige" userLabel="btn6">
+                                <rect key="frame" x="157" y="474" width="70" height="70"/>
+                                <state key="normal" backgroundImage="home_btn6.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="btn1" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ct-O0-QqQ">
+                                <rect key="frame" x="157" y="44" width="70" height="70"/>
+                                <state key="normal" backgroundImage="home_btn2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="9s4-9t-koV" secondAttribute="trailing" constant="-16" id="LKF-DD-LiA"/>
+                            <constraint firstItem="FIh-y6-sbf" firstAttribute="top" secondItem="9s4-9t-koV" secondAttribute="bottom" id="bDF-uy-vBM"/>
+                            <constraint firstItem="9s4-9t-koV" firstAttribute="top" secondItem="xWn-0S-ZNH" secondAttribute="topMargin" id="k4g-A2-YZ2"/>
+                            <constraint firstItem="9s4-9t-koV" firstAttribute="leading" secondItem="xWn-0S-ZNH" secondAttribute="leadingMargin" constant="-16" id="xb1-Dk-lL2"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hCb-kC-IMW"/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="btn0" destination="9s4-9t-koV" id="MmE-8d-qfe"/>
                         <outlet property="btn1" destination="5ct-O0-QqQ" id="ncL-r5-09h"/>
@@ -657,24 +660,24 @@
     </scenes>
     <resources>
         <image name="app-icon-01.png" width="2500" height="2500"/>
+        <image name="home_btn1.png" width="207" height="207"/>
+        <image name="home_btn2.png" width="207" height="207"/>
+        <image name="home_btn3.png" width="207" height="207"/>
+        <image name="home_btn4.png" width="207" height="207"/>
+        <image name="home_btn5.png" width="207" height="207"/>
+        <image name="home_btn6.png" width="207" height="207"/>
         <image name="大豆.png" width="184" height="184"/>
         <image name="波霸.png" width="677" height="677"/>
         <image name="珍珠.png" width="353" height="353"/>
-        <image name="珍珠豆花1 .png" width="207" height="207"/>
         <image name="紅豆.png" width="490" height="490"/>
-        <image name="紅豆豆花1.png" width="207" height="207"/>
         <image name="綠豆.png" width="492" height="492"/>
         <image name="花生.png" width="149" height="149"/>
-        <image name="薏仁湯 1.png" width="207" height="207"/>
         <image name="薏仁湯.png" width="154" height="154"/>
         <image name="豆漿.png" width="207" height="207"/>
-        <image name="豆漿1.png" width="207" height="207"/>
-        <image name="豆漿豆花 1.png" width="207" height="207"/>
         <image name="豆漿豆花.png" width="167" height="159"/>
         <image name="豆花.png" width="154" height="154"/>
-        <image name="豆花1.png" width="207" height="207"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Oi8-BZ-AJt"/>
+        <segue reference="xIe-i0-KDs"/>
     </inferredMetricsTieBreakers>
 </document>
