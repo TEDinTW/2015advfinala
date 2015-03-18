@@ -574,6 +574,7 @@
                             <constraint firstItem="Bz2-qm-uiL" firstAttribute="top" secondItem="zrw-BM-h1x" secondAttribute="bottom" constant="15" id="mwf-gs-B8b"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="btnTel" destination="Sme-td-BDw" id="Us7-TD-Usb"/>
@@ -647,7 +648,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="lch-01-2Db" kind="show" id="xIe-i0-KDs"/>
+                        <segue destination="lch-01-2Db" kind="show" id="pVK-3S-cib"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjZ-6F-Rsr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -675,6 +676,6 @@
         <image name="豆花1.png" width="207" height="207"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Oi8-BZ-AJt"/>
+        <segue reference="pVK-3S-cib"/>
     </inferredMetricsTieBreakers>
 </document>
