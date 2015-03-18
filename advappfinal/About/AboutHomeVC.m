@@ -91,9 +91,10 @@
 //    MySwiftClass *swiftObject = [[MySwiftClass alloc] init];
 //    [swiftObject swiftMethod];
 }
+/*
 - (IBAction)pushBtn:(UIButton *)sender {
     vc1=[[MapVC alloc]init];
     [self.navigationController pushViewController:vc1 animated:YES];
 }
-
+*/
 @end

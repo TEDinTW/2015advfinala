@@ -10,6 +10,6 @@
 #import <Foundation/Foundation.h>
 
 @interface zuProductDetail : UIViewController
-
+@property NSString *prdViewImg;
 
 @end
