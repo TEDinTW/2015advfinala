@@ -189,7 +189,6 @@
     //    [self dismissViewControllerAnimated:YES completion:nil];
     ZuProduct *zuPrdDetail;
     zuPrdDetail=[self.storyboard instantiateViewControllerWithIdentifier:@"zuProductDetail"];
-    //    =[[ZuProduct alloc]init]; //回到上一頁
     [self presentViewController:zuPrdDetail animated:YES completion:nil];
 
 //

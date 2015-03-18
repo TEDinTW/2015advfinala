@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ma1-gi-XCg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NV9-6e-y1r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -367,7 +367,7 @@
         <!--Zu Product-->
         <scene sceneID="8H0-R3-feQ">
             <objects>
-                <viewController id="NV9-6e-y1r" customClass="ZuProduct" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ZuProduct" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NV9-6e-y1r" customClass="ZuProduct" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MhN-Pt-pbt"/>
                         <viewControllerLayoutGuide type="bottom" id="3En-tW-Tgj"/>
@@ -376,10 +376,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRI-al-4bJ" userLabel="porductView">
-                                <rect key="frame" x="83" y="225" width="218" height="218"/>
-                                <color key="backgroundColor" red="0.77189859169999997" green="0.96677069810000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="選擇你要的主餐" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1F-gp-MDM">
                                 <rect key="frame" x="16" y="87" width="274" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -464,13 +460,22 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQx-fX-EMi">
+                                <rect key="frame" x="7" y="154" width="360" height="360"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="prdImgBtnAction:" destination="NV9-6e-y1r" eventType="touchUpInside" id="g8L-ju-yXn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mainView" destination="q30-Sy-aAo" id="73X-FS-C0T"/>
-                        <outlet property="productView" destination="RRI-al-4bJ" id="419-3f-Y9k"/>
+                        <outlet property="prdImgBtn" destination="uQx-fX-EMi" id="21e-Qh-bml"/>
                         <outlet property="secView" destination="eLU-KD-RAR" id="kd4-WC-ydV"/>
                         <outletCollection property="secBtnCollection" destination="eHT-rf-yGd" id="j84-UV-5Er"/>
                         <outletCollection property="secBtnCollection" destination="d7Y-kp-9HW" id="qkf-cT-fK0"/>
@@ -488,12 +493,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jwr-k8-ecv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="dy7-iT-3w5"/>
             </objects>
-            <point key="canvasLocation" x="444.5" y="1903.5"/>
+            <point key="canvasLocation" x="412.5" y="1903.5"/>
         </scene>
         <!--Zu Product Detail-->
         <scene sceneID="dJh-mi-6c0">
             <objects>
-                <viewController id="ma1-gi-XCg" customClass="zuProductDetail" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="zuProductDetail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ma1-gi-XCg" customClass="zuProductDetail" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H45-6G-ahk"/>
                         <viewControllerLayoutGuide type="bottom" id="nkL-6l-kgA"/>
@@ -505,12 +510,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QcZ-4B-EZE">
                                 <rect key="frame" x="36" y="156" width="303" height="303"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTt-hV-nhU">
-                                <rect key="frame" x="45" y="84" width="285" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
