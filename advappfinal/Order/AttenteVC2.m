@@ -52,21 +52,41 @@
     UITableViewCell* cell=[tableView dequeueReusableCellWithIdentifier:@"dataCell"];
     
     //objectAtIndex:_selectRowInTableView1]objectForKey:@"Menu_List"]
+   
+
+    NSLog(@"%@",[[self.order objectAtIndex:indexPath.row]objectForKey:@"subProName"]);
+    NSLog(@"%@",[[self.order objectAtIndex:indexPath.row]objectForKey:@"price"]);
+    NSLog(@"%@",[[self.order objectAtIndex:indexPath.row]objectForKey:@"num"]);
+
+    
+    
     
     
     //努力尋找label中
-    UILabel* label = (UILabel *)[self.view viewWithTag:1];
-    [label setText:@"aaa"];
-    label.text = [[self.order objectAtIndex:_TableViewData]objectForKey:@"subProName"];
-    
-    
-    if(self.view.tag ==1){
-       //  = [[self.order objectAtIndex:_TableViewData]objectForKey:@"subProName"];
-        
+     int prices;
+    for (UILabel *lbl in cell.contentView.subviews) {
 
-    //cell.textLabel.text = [[self.order objectAtIndex:_TableViewData]objectForKey:@"subProName"];
+        switch (lbl.tag) {
+            case 11:
+                lbl.text =[[self.order objectAtIndex:indexPath.row]objectForKey:@"subProName"];
+                break;
+            case 12:
+                lbl.text =[[NSString alloc]initWithFormat:@"%@", [[self.order objectAtIndex:indexPath.row]objectForKey:@"num"]];
+                break;
+            case 13:
+                
+               
+                prices = [[[self.order objectAtIndex:indexPath.row]objectForKey:@"num"] intValue] * [[[self.order objectAtIndex:indexPath.row]objectForKey:@"price"] intValue];
+                lbl.text =[[NSString alloc]initWithFormat:@"%d", prices];
+                
+               
+                break;
+                
+            }
     }
-    return cell;
+
+    
+       return cell;
 }
 
 
