@@ -44,14 +44,14 @@
     
     
     [UIView animateWithDuration:3.0 animations:^{
-        self.btn1.alpha=1;
+        self.btn1.alpha=0.3;
         self.btn2.alpha=1;
         self.btn3.alpha=1;
         self.btn4.alpha=1;
         self.btn5.alpha=1;
         self.btn6.alpha=1;
         self.btn0.alpha=0.5;
-        _btn1.frame=CGRectMake(self.view.frame.size.width*196/414.0,self.view.frame.size.height*211/736,self.view.frame.size.width*70/414,self.view.frame.size.height*70/736);
+        _btn1.frame=CGRectMake(self.view.frame.size.width*196/414.0,self.view.frame.size.height*211/736,self.view.frame.size.width*700/414,self.view.frame.size.height*70/736);
         _btn2.frame=CGRectMake(self.view.frame.size.width*90/414.0,self.view.frame.size.height*200/736,self.view.frame.size.width*70/414,self.view.frame.size.height*70/736);
         _btn3.frame=CGRectMake(self.view.frame.size.width*271/414.0,self.view.frame.size.height*222/736,self.view.frame.size.width*70/414,self.view.frame.size.height*70/736);
         _btn4.frame=CGRectMake(self.view.frame.size.width*102/414.0,self.view.frame.size.height*313/736,self.view.frame.size.width*70/414,self.view.frame.size.height*70/736);
