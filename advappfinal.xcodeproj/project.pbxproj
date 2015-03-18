@@ -29,6 +29,9 @@
 		65CB7D2E1AB72B870017CCEC /* 4_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65CB7D241AB72B870017CCEC /* 4_3.jpg */; };
 		65CB7D2F1AB72B870017CCEC /* 4_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65CB7D251AB72B870017CCEC /* 4_4.jpg */; };
 		65CB7D301AB72B870017CCEC /* 3_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65CB7D261AB72B870017CCEC /* 3_1.jpg */; };
+		810B74C31AB83C3800E18815 /* TEDConfirmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 810B74C21AB83C3800E18815 /* TEDConfirmVC.xib */; };
+		810B74CF1AB855DB00E18815 /* AttenteVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B74CE1AB855DB00E18815 /* AttenteVC2.m */; };
+		810B74D11AB85C2600E18815 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 810B74D01AB85C2600E18815 /* Main2.storyboard */; };
 		812FFDC81AA9C9420001373A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDC71AA9C9420001373A /* main.m */; };
 		812FFDCB1AA9C9420001373A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDCA1AA9C9420001373A /* AppDelegate.m */; };
 		812FFDCE1AA9C9420001373A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 812FFDCD1AA9C9420001373A /* ViewController.m */; };
@@ -61,7 +64,6 @@
 		81EF01EA1AB700FF00EFA1F3 /* btn3.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF01E41AB700FF00EFA1F3 /* btn3.png */; };
 		81EF01EF1AB70FB500EFA1F3 /* 豆漿1.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF01EE1AB70FB500EFA1F3 /* 豆漿1.png */; };
 		81EF01F51AB7159800EFA1F3 /* 珍珠豆花1 .png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF01F11AB7159800EFA1F3 /* 珍珠豆花1 .png */; };
-		81FB01911AB6ED5A004FBBAC /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FB01901AB6ED5A004FBBAC /* Main2.storyboard */; };
 		81FB01941AB6EFD9004FBBAC /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FB01931AB6EFD9004FBBAC /* MapVC.swift */; };
 		9BBC13031AB1C19D00B42C5D /* ZuProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBC13021AB1C19D00B42C5D /* ZuProduct.m */; };
 		9BBC133A1AB2E21E00B42C5D /* 大豆.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC13291AB2E21E00B42C5D /* 大豆.png */; };
@@ -125,6 +127,10 @@
 		65CB7D241AB72B870017CCEC /* 4_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4_3.jpg; sourceTree = "<group>"; };
 		65CB7D251AB72B870017CCEC /* 4_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4_4.jpg; sourceTree = "<group>"; };
 		65CB7D261AB72B870017CCEC /* 3_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3_1.jpg; sourceTree = "<group>"; };
+		810B74C21AB83C3800E18815 /* TEDConfirmVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TEDConfirmVC.xib; sourceTree = "<group>"; };
+		810B74CD1AB855DB00E18815 /* AttenteVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttenteVC2.h; sourceTree = "<group>"; };
+		810B74CE1AB855DB00E18815 /* AttenteVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttenteVC2.m; sourceTree = "<group>"; };
+		810B74D01AB85C2600E18815 /* Main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
 		812FFDC21AA9C9420001373A /* advappfinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = advappfinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		812FFDC61AA9C9420001373A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		812FFDC71AA9C9420001373A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -187,7 +193,6 @@
 		81EF01F21AB7159800EFA1F3 /* 紅豆豆花1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "紅豆豆花1.png"; sourceTree = "<group>"; };
 		81EF01F31AB7159800EFA1F3 /* 薏仁湯 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "薏仁湯 1.png"; sourceTree = "<group>"; };
 		81EF01F81AB715A500EFA1F3 /* 豆花1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "豆花1.png"; sourceTree = "<group>"; };
-		81FB01901AB6ED5A004FBBAC /* Main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
 		81FB01921AB6EFD9004FBBAC /* advappfinal-MapVC-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "advappfinal-MapVC-Swift.h"; sourceTree = "<group>"; };
 		81FB01931AB6EFD9004FBBAC /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		9BBC13011AB1C19D00B42C5D /* ZuProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZuProduct.h; sourceTree = "<group>"; };
@@ -324,7 +329,7 @@
 				812FFE0B1AA9CD890001373A /* APPGeneralHeader.h */,
 				812FFE0E1AA9D18A0001373A /* APPGTool.h */,
 				812FFE0F1AA9D18A0001373A /* APPGTool.m */,
-				81FB01901AB6ED5A004FBBAC /* Main2.storyboard */,
+				810B74D01AB85C2600E18815 /* Main2.storyboard */,
 			);
 			path = advappfinal;
 			sourceTree = "<group>";
@@ -437,10 +442,13 @@
 			children = (
 				D29F26FE1AB1D879004C8536 /* TEDConfirmVC.h */,
 				D29F26FF1AB1D879004C8536 /* TEDConfirmVC.m */,
+				810B74C21AB83C3800E18815 /* TEDConfirmVC.xib */,
 				816490221AAF1A1800F8DD6B /* AttenteVC.h */,
 				816490231AAF1A1800F8DD6B /* AttenteVC.m */,
 				81CFB8751AAF1399000A9C7F /* JukunProducts.h */,
 				81CFB8761AAF1399000A9C7F /* JukunProducts.m */,
+				810B74CD1AB855DB00E18815 /* AttenteVC2.h */,
+				810B74CE1AB855DB00E18815 /* AttenteVC2.m */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -592,6 +600,7 @@
 				9BBC13451AB2E21E00B42C5D /* 珍珠豆花.png in Resources */,
 				9BBC13431AB2E21E00B42C5D /* flowerfreshbeanflower.png in Resources */,
 				9FAA2FEF1AB1B8690017BC16 /* TEDVC2.xib in Resources */,
+				810B74D11AB85C2600E18815 /* Main2.storyboard in Resources */,
 				65CB7D1B1AB706510017CCEC /* 3_4.jpg in Resources */,
 				65CB7D191AB706510017CCEC /* 2_1.jpg in Resources */,
 				81A252C61AB1BA7500F9E5F2 /* app-icon-01.psd in Resources */,
@@ -615,7 +624,7 @@
 				9BBC13461AB2E21E00B42C5D /* 紅豆.png in Resources */,
 				812FFE191AA9DF230001373A /* 1_about1.json in Resources */,
 				9BBC13411AB2E21E00B42C5D /* 波霸豆花.png in Resources */,
-				81FB01911AB6ED5A004FBBAC /* Main2.storyboard in Resources */,
+				810B74C31AB83C3800E18815 /* TEDConfirmVC.xib in Resources */,
 				9BBC133B1AB2E21E00B42C5D /* 大豆豆花.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -656,6 +665,7 @@
 				81CFB8771AAF1399000A9C7F /* JukunProducts.m in Sources */,
 				812FFE0A1AA9CCFE0001373A /* AboutMeVC.m in Sources */,
 				812FFE071AA9C9EF0001373A /* AFURLSessionManager.m in Sources */,
+				810B74CF1AB855DB00E18815 /* AttenteVC2.m in Sources */,
 				812FFDCB1AA9C9420001373A /* AppDelegate.m in Sources */,
 				812FFDC81AA9C9420001373A /* main.m in Sources */,
 				D29F27051AB1DA2B004C8536 /* DetailVC.m in Sources */,

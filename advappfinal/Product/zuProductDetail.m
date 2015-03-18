@@ -28,11 +28,17 @@
     // Do any additional setup after loading the view
   //  self.view.backgroundColor=[UIColor grayColor];
   //  self.view.backgroundColor=[UIColor colorWithWhite:0.5 alpha:6];
+    UIButton *preButton=[UIButton buttonWithType:UIButtonTypeRoundedRect]; //圓角button
+    [preButton setFrame:CGRectMake( 300, 634, 63, 30)];
+    [preButton setTitle:@"上一頁" forState:UIControlStateNormal];
+    [preButton addTarget:self action:@selector(prePageButton:) forControlEvents:UIControlEventTouchUpInside];
+    
     [self getJson];
     [self productNameLabel];
     [self productNameImage];
-    [self productIntroView];
     [self productIntroLabel];
+    [self productIntroView];
+    [self.view addSubview:preButton];
     
 }
 
@@ -90,6 +96,7 @@
     upperView.backgroundColor = [UIColor blackColor];
     upperView.alpha=0.0f;
     upperView.userInteractionEnabled=NO; //不遮下面的元件
+    [self.view addSubview:upperView];
 }
 
 
@@ -99,6 +106,7 @@
     introLabel = [[UILabel alloc]initWithFrame:CGRectMake( 16, 532, 343, 127)];
     //introLabel.backgroundColor = [UIColor redColor];
     introLabel.textColor=[UIColor whiteColor];
+//    introLabel.textColor=[UIColor blackColor];
     introLabel.text=[dict1 objectForKey:@"prdIntro"];
     [introLabel setNumberOfLines:0];  //換行
     introLabel.alpha=0.0f;
@@ -113,32 +121,36 @@
        // upperView.hidden=NO;
        // upperView.alpha=0.0f;
         NSLog(@"upperView no hidden");
-        [self upperViewAnimated];
+        [self upperViewAnimation];
     }else{
        // upperView.alpha=0.7f;
        // upperView.hidden=YES;
         NSLog(@"upperView hidden");
-        [self upperViewAnimated];
+        [self upperViewAnimation];
     }
-    [self.view addSubview:upperView];
+//    [self.view addSubview:upperView];
 }
 
 
 
 #pragma mark - 淡入淡出動畫
--(void)upperViewAnimated{
+-(void)upperViewAnimation{
     if(upperView.alpha==0.0f){
         [UIView animateWithDuration:0.5 animations:^{
             upperView.frame=CGRectMake(0, 0, 375, 667);
             upperView.alpha=0.7f;
             introLabel.alpha=1.0f;
+//            introLabel.backgroundColor=[UIColor blackColor];
+//            introLabel.textColor=[UIColor whiteColor];
+            [self.view bringSubviewToFront:introLabel];
             self.view.backgroundColor=[UIColor grayColor];
         }completion:^(BOOL finished){}];
     }else{
         [UIView animateWithDuration:0.5 animations:^{
             upperView.frame=CGRectMake(0, 0, 375, 667);
             upperView.alpha=0.0f;
-            introLabel.alpha=0.0f;
+//            introLabel.alpha=0.0f;
+            introLabel.alpha=1.0f;
             self.view.backgroundColor=[UIColor whiteColor];
         } completion:^(BOOL finished){}];
     }
@@ -147,6 +159,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(void)prePageButton:(UIButton *)sender{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*
