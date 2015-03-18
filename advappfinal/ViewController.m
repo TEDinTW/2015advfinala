@@ -34,29 +34,31 @@
 //    [self.view addSubview:view.view];
 //    [self presentViewController:view animated:YES completion:nil];
     
-    self.btn0.alpha=0;
+    self.btn0.alpha = 0;
     self.btn1.alpha = 0;
     self.btn2.alpha = 0;
     self.btn3.alpha = 0;
     self.btn4.alpha = 0;
     self.btn5.alpha = 0;
     self.btn6.alpha = 0;
-    [self.view bringSubviewToFront:self.btn2];
-    [UIButton animateWithDuration:3.0 animations:^{
-        self.btn1.alpha=1;
+    
+    
+    [UIView animateWithDuration:3.0 animations:^{
+        self.btn1.alpha=0.3;
         self.btn2.alpha=1;
         self.btn3.alpha=1;
         self.btn4.alpha=1;
         self.btn5.alpha=1;
         self.btn6.alpha=1;
         self.btn0.alpha=0.5;
-        _btn1.frame=CGRectMake(self.view.frame.size.width*196/414,self.view.frame.size.height*211/736,self.view.frame.size.width*70/414,self.view.frame.size.height*70/736);
-        _btn2.frame=CGRectMake(self.view.frame.size.width*90/414,self.view.frame.size.height*200/736,self.view.frame.size.width*70/414,self.view.frame.size.height*70/736);
-        _btn3.frame=CGRectMake(self.view.frame.size.width*271/414,self.view.frame.size.height*222/736,self.view.frame.size.width*70/414,self.view.frame.size.height*70/736);
-        _btn4.frame=CGRectMake(self.view.frame.size.width*102/414,self.view.frame.size.height*313/736,self.view.frame.size.width*70/414,self.view.frame.size.height*70/736);
+        _btn1.frame=CGRectMake(self.view.frame.size.width*196/414.0,self.view.frame.size.height*211/736,self.view.frame.size.width*700/414,self.view.frame.size.height*70/736);
+        _btn2.frame=CGRectMake(self.view.frame.size.width*90/414.0,self.view.frame.size.height*200/736,self.view.frame.size.width*70/414,self.view.frame.size.height*70/736);
+        _btn3.frame=CGRectMake(self.view.frame.size.width*271/414.0,self.view.frame.size.height*222/736,self.view.frame.size.width*70/414,self.view.frame.size.height*70/736);
+        _btn4.frame=CGRectMake(self.view.frame.size.width*102/414.0,self.view.frame.size.height*313/736,self.view.frame.size.width*70/414,self.view.frame.size.height*70/736);
         _btn5.frame=CGRectMake(self.view.frame.size.width*271/414,self.view.frame.size.height*313/736,self.view.frame.size.width*70/414,self.view.frame.size.height*70/736);
         _btn6.frame=CGRectMake(self.view.frame.size.width*189/414,self.view.frame.size.height*400/736,self.view.frame.size.width*70/414,self.view.frame.size.height*70/736);
     }];
+   
 //    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 //    NSString *tmpStr=[NSString stringWithFormat:@"%@ted_temp/pdf_json.php?category=5",[APPGTool getWebServerURL]];
 //    [manager GET:tmpStr parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
