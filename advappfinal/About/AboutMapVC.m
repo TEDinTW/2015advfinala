@@ -58,6 +58,9 @@
     MKCoordinateRegion region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(locationX,locationY), MKCoordinateSpanMake(0.01, 0.01));
     [self.myMap setRegion:region];
 }
+- (IBAction)pushBackBtn:(UIButton *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 /*
 #pragma mark - Navigation
 

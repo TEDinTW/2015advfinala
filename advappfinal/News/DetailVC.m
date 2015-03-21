@@ -13,13 +13,15 @@
 @end
 
 @implementation DetailVC
-@synthesize detailItem;
+//@synthesize detailItem;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"%@",detailItem);
+    NSLog(@"%@",_detailItem);
     //設定Navigation Bar的title
+//    [self.detailItem objectForKey:@"title"];
+    
     self.navigationItem.title = self.detailItem[@"title"];
     //設定欄位的內容
     self.time.text = self.detailItem[@"update_time"];

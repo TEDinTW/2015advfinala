@@ -128,11 +128,12 @@
     [mDict setObject:[[[[jukunObj.products objectAtIndex:_selectRowInTableView1]objectForKey:@"Menu_List"]objectAtIndex:_selectRowInTableView2]objectForKey:@"name"] forKey:@"subProName"];
     [mDict setObject:[[[[jukunObj.products objectAtIndex:_selectRowInTableView1]objectForKey:@"Menu_List"]objectAtIndex:_selectRowInTableView2]objectForKey:@"price"] forKey:@"price"];
     [mDict setObject:[NSNumber numberWithDouble:_stepper.value] forKey:@"num"];
-    
+    //判斷訂購數量是否大於0
+    if(_stepper.value > 0){
     [_order addObject:mDict];
-   
-    
-
+    }
+    _orderNum.text = @"0";
+    _stepper.value = 0;
 }
 - (IBAction)changedStepper:(UIStepper *)sender {
     //原本值為float,label 印出後數字後面會有"...",所以要強制轉型成int
@@ -149,7 +150,7 @@
         
         if(_tableView2.indexPathForSelectedRow !=nil){
             
-            if(_stepper.value != 0){
+
                 
                 if(_order.count != 0){
                     
@@ -158,8 +159,8 @@
                     vc.order=[NSArray arrayWithArray:_order];
                     [self presentViewController:vc animated:YES completion:nil];
                     
-                    
-                    //[self performSegueWithIdentifier:@"gotoData" sender:nil];
+                    //失敗的xib.....
+//                    [self performSegueWithIdentifier:@"gotoData" sender:nil];
 //                    //    _order
 //                    TEDConfirmVC *vc=[[TEDConfirmVC alloc]initWithNibName:@"TEDConfirmVC" bundle:nil];
 //                    vc.order=[NSArray arrayWithArray:_order];
@@ -170,13 +171,10 @@
                     
                 }else{
                     NSLog(@"請按加入");
-                    [self alertControllerWithTitle:@"錯誤訊息" Message:@"請按加入"];
+                    [self alertControllerWithTitle:@"錯誤訊息" Message:@"請選擇數量並按加入"];
                 }
                 
-            }else{
-                NSLog(@"請輸入數量");
-                [self alertControllerWithTitle:@"錯誤訊息" Message:@"請輸入數量"];
-            }
+
             
         }else{
             NSLog(@"請選擇商品2");
